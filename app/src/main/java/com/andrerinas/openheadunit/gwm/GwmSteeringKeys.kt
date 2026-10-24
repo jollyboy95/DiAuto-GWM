@@ -40,13 +40,14 @@ internal object GwmSteeringKeys {
         override fun toString(): String = "$code ${label(code)} · ${actionLabel(action)}"
     }
 
-    private val main = Handler(Looper.getMainLooper())
+    // Lazy, so the parsing below can be unit-tested without an Android main looper.
+    private val main by lazy { Handler(Looper.getMainLooper()) }
     private val listeners = CopyOnWriteArraySet<(Event) -> Unit>()
     @Volatile var status: String = "Not listening."
         private set
     private var app: Context? = null
 
-    private val binder = object : Binder() {
+    private val binder by lazy { object : Binder() {
         override fun onTransact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
             if (code == INTERFACE_TRANSACTION) {
                 reply?.writeString(LISTENER_DESCRIPTOR)
@@ -61,7 +62,7 @@ internal object GwmSteeringKeys {
             }
             return true
         }
-    }
+    } }
 
     /** Listeners run on the main thread. Registers with the adapter for the first listener. */
     @Synchronized fun addListener(context: Context, listener: (Event) -> Unit) {
