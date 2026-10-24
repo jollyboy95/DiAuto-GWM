@@ -201,6 +201,12 @@
             android:theme="@style/AppTheme" />
 
         <activity
+            android:name=".gwm.GwmSettingsActivity"
+            android:exported="false"
+            android:label="@string/gwm_settings_title"
+            android:theme="@style/AppTheme" />
+
+        <activity
             android:name=".main.OnboardingActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"
