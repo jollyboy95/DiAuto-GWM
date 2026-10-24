@@ -116,7 +116,9 @@ internal class GwmHeadUpView(context: Context) : View(context) {
         val pad = h * 0.06f
         val usableW = w - pad * 2f
         val usableH = h - pad * 2f
-        val road = GwmFormat.road(context, next).trim()
+        // Google Maps often names the next road "towards <place>"; in a 144 px window the place is
+        // the useful part, so the prefix goes.
+        val road = GwmFormat.road(context, next).trim().removePrefix("towards ").removePrefix("Towards ").trim()
         val extraLines = (if (road.isNotEmpty()) 1 else 0) + (if (eta != null) 1 else 0)
         // The first line gets the most room; each extra line about a quarter of the height.
         val lineH = when (extraLines) {
