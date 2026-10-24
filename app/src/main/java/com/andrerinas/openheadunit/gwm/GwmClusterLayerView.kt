@@ -135,20 +135,24 @@ internal class GwmClusterLayerView(context: Context, private val settings: GwmSe
         text.textSize = bh * 0.24f
         text.textAlign = Paint.Align.LEFT
         text.color = dim
+        // The adapter can answer with no values at all; that is "no data", not a live reading.
+        val anyValue = data != null && (data.speedKph != null || data.fuelPercent != null ||
+            data.rangeKm != null || data.odometerKm != null)
         val unit = when {
-            data != null -> context.getString(R.string.gwm_unit_kmh)
+            anyValue -> context.getString(R.string.gwm_unit_kmh)
             hadVehicleData -> context.getString(R.string.gwm_data_stale)
             else -> context.getString(R.string.gwm_data_unavailable)
         }
         canvas.drawText(unit, cx + bh * 0.45f, baseline, text)
 
-        // Fuel bar and range, left.
-        val left = w * 0.035f
+        // Fuel bar and range, left: starting right of the car's own lamps at the bottom left (EV badge,
+        // speed-limit sign, driver-assist icons), which r5 on the H7 showed over a bar at 3.5 %.
+        val left = w * FUEL_LEFT
         val icon = bh * 0.38f
         val fuel = data?.fuelPercent
         drawPump(canvas, left, mid - icon / 2f, icon, if (fuel != null) Color.WHITE else faint)
         val barLeft = left + icon * 1.35f
-        val barW = w * 0.10f
+        val barW = w * 0.07f
         val barH = bh * 0.07f
         rect.set(barLeft, mid - barH / 2f, barLeft + barW, mid + barH / 2f)
         canvas.drawRoundRect(rect, barH, barH, track)
@@ -183,7 +187,11 @@ internal class GwmClusterLayerView(context: Context, private val settings: GwmSe
         val left = (w - cw) / 2f
         val top = h * 0.105f
         val radius = ch * 0.16f
-        rect.set(left, top, left + cw, top + ch)
+        // Arrival, time and distance left only when the phone reports them in its navigation data;
+        // without them the card ends under the road name instead of leaving an empty row.
+        val info = GwmFormat.tripParts(context, next).joinToString("  ·  ")
+        val cardHeight = if (info.isNotEmpty()) ch else ch * 0.66f
+        rect.set(left, top, left + cw, top + cardHeight)
         canvas.drawRoundRect(rect, radius, radius, glass)
         edge.strokeWidth = h * 0.002f
         canvas.drawRoundRect(rect, radius, radius, edge)
@@ -211,9 +219,8 @@ internal class GwmClusterLayerView(context: Context, private val settings: GwmSe
         val road = GwmFormat.road(context, next)
         if (road.isNotEmpty()) canvas.drawText(fit(road, textWidth), textLeft, top + ch * 0.53f, text)
 
-        canvas.drawRect(left + ch * 0.12f, top + ch * 0.655f, left + cw - ch * 0.12f, top + ch * 0.655f + 1.5f, line)
-        val info = GwmFormat.tripParts(context, next).joinToString("  ·  ")
         if (info.isNotEmpty()) {
+            canvas.drawRect(left + ch * 0.12f, top + ch * 0.655f, left + cw - ch * 0.12f, top + ch * 0.655f + 1.5f, line)
             text.typeface = medium
             text.textSize = ch * 0.135f
             canvas.drawText(fit(info, left + cw - ch * 0.12f - (left + ch * 0.12f)), left + ch * 0.12f, top + ch * 0.87f, text)
@@ -299,6 +306,8 @@ internal class GwmClusterLayerView(context: Context, private val settings: GwmSe
     private companion object {
         const val DASH = "—"
         const val LOW_FUEL_PERCENT = 15f
+        /** Clear of the stock bottom-left lamps (to about 18 % of the panel on the OFF-ROAD theme). */
+        const val FUEL_LEFT = 0.205f
     }
 }
 

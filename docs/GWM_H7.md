@@ -78,9 +78,9 @@ Map-first, after the approved Aston Martin / CarPlay Ultra-style design, built a
 | --- | --- | --- |
 | Live map | full panel | Android Auto cluster video |
 | Stock gear indicator | top centre, 0–10 %, left clear | car |
-| Navigation card | top centre, 10.5–30.5 % | Android Auto navigation metadata |
+| Navigation card | top centre, 10.5–30.5 % (shorter when the phone sends no trip data) | Android Auto navigation metadata |
 | Music card | top right, 10–28.5 % | Android Auto media channel |
-| Instrument strip | 76 % to bottom: fuel bar + range left, speed centre, odometer right | `gwm_adapter` |
+| Instrument strip | 76 % to bottom: fuel bar + range from 20.5 % (right of the stock lamps), speed centre, odometer right | `gwm_adapter` |
 | READY, speed-limit/assist, ECO | lamp row under the strip | car, draws above DiAuto |
 
 No circular gauges and no copies of stock indicators. A value the car does not report shows `—`.
