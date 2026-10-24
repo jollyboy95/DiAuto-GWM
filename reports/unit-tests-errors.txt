@@ -1,18 +1,120 @@
 > Configure project :app
 > Configure project :contract
 w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/contract/build.gradle.kts:15:9: 'targetSdk: Int?' is deprecated. Will be removed from library DSL in AGP 9.0. Use testOptions.targetSdk or/and lint.targetSdk instead
-/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/res/values/strings_gwm.xml:45:4: Failed to flatten XML for resource 'gwm_hud_area_note' with error: Invalid unicode escape sequence in string
-* What went wrong:
-> A failure occurred while executing com.android.build.gradle.internal.res.ResourceCompilerRunnable
-   > Resource compilation failed (Failed to compile values resource file /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/incremental/githubDebug/mergeGithubDebugResources/merged.dir/values/values.xml. Cause: java.lang.IllegalStateException: Can not extract resource from com.android.aaptcompiler.ParsedResource@19bd6866.). Check logs for more details.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-* Exception is:
-org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:mergeGithubDebugResources'.
-	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
-Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.res.ResourceCompilerRunnable
-Caused by: com.android.aaptcompiler.ResourceCompilationException: Resource compilation failed (Failed to compile values resource file /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/incremental/githubDebug/mergeGithubDebugResources/merged.dir/values/values.xml. Cause: java.lang.IllegalStateException: Can not extract resource from com.android.aaptcompiler.ParsedResource@19bd6866.). 
-Caused by: com.android.aaptcompiler.ResourceCompilationException: Failed to compile values resource file /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/incremental/githubDebug/mergeGithubDebugResources/merged.dir/values/values.xml
-Caused by: java.lang.IllegalStateException: Can not extract resource from com.android.aaptcompiler.ParsedResource@19bd6866.
-BUILD FAILED in 1m 16s
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/contract/src/main/java/com/andrerinas/openheadunit/contract/HeadUnitIntent.kt:66:27 'getParcelableExtra(String!): T?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapAudio.kt:145:22 Variable 'result' initializer is redundant
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapControl.kt:212:30 Parameter 'request' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapControl.kt:330:29 Parameter 'request' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapControl.kt:474:36 Parameter 'request' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapMessageIncoming.kt:59:24 Parameter 'header' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapNavigation.kt:64:30 'nextTurnDetail: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDetail>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapNavigation.kt:86:30 'nextTurnDistance: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDistanceEvent>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapNavigation.kt:151:18 'nextTurnDetail: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDetail>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapNavigation.kt:152:18 'nextTurnDistance: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDistanceEvent>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapNavigation.kt:187:32 'nextTurnDetail: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDetail>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapNavigationHelper.kt:91:31 'nextTurnDetail: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDetail>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapProjectionActivity.kt:1175:33 Name shadowed: ov
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapProjectionActivity.kt:1177:47 Condition 'cv != null' is always 'true'
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapProjectionActivity.kt:1276:35 Unnecessary safe call on a non-null receiver of type View?
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapProjectionActivity.kt:1277:35 Unnecessary safe call on a non-null receiver of type View?
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapProjectionActivity.kt:1317:69 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapProjectionActivity.kt:1329:30 'setOnSystemUiVisibilityChangeListener(View.OnSystemUiVisibilityChangeListener!): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapProjectionActivity.kt:1330:42 'SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:396:22 Enum argument can be null in Java, but exhaustive when contains no null branch
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:456:13 Variable 'session' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:606:86 'get(String!): Any?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1099:36 'FLAG_HANDLES_MEDIA_BUTTONS: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1100:36 'FLAG_HANDLES_TRANSPORT_CONTROLS: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1569:34 'getter for isConnected: Boolean' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1569:54 'getter for type: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1569:82 'TYPE_WIFI: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1748:63 'WIFI_MODE_FULL_HIGH_PERF: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1847:9 'stopForeground(Boolean): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1910:13 'stopForeground(Boolean): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:1973:33 Unnecessary safe call on a non-null receiver of type Intent?
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:2032:40 Unnecessary safe call on a non-null receiver of type Intent?
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/AapService.kt:2671:41 The corresponding parameter in the supertype 'Listener' is named 'oneShot'. This may cause problems when calling this function with named arguments.
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/aap/protocol/MsgType.kt:44:13 Duplicate label in when
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/app/RemoteControlReceiver.kt:51:21 Name shadowed: debugIntent
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/app/WifiAutoStartReceiver.kt:6:20 'NetworkInfo' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/app/WifiAutoStartReceiver.kt:28:71 'NetworkInfo' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/app/WifiAutoStartReceiver.kt:34:48 'getter for isConnected: Boolean' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/app/WifiAutoStartReceiver.kt:47:51 'getter for connectionInfo: WifiInfo!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/CommManager.kt:520:39 Unnecessary safe call on a non-null receiver of type AapAudio
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/NearbyManager.kt:178:114 'getter for authenticationToken: String' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/NetworkDiscovery.kt:370:38 Type mismatch: inferred type is String? but String was expected
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/NetworkDiscovery.kt:389:40 Unsafe use of a nullable receiver of type String?
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/NetworkDiscovery.kt:391:37 Unsafe use of a nullable receiver of type String?
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/SocketAccessoryConnection.kt:98:43 'getter for allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:8:20 'NetworkInfo' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:284:46 'getParcelableExtra(String!): T?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:284:65 'NetworkInfo' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:285:38 'getter for isConnected: Boolean' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:805:36 'getter for connectionInfo: WifiInfo!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:1154:21 The value 'newManager' assigned to 'var mgr: WifiP2pManager? defined in com.andrerinas.openheadunit.connection.WifiDirectManager.startNativeAaQuietHost' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:1155:21 The value 'newChannel' assigned to 'var ch: WifiP2pManager.Channel? defined in com.andrerinas.openheadunit.connection.WifiDirectManager.startNativeAaQuietHost' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/connection/WifiDirectManager.kt:1245:37 'getter for connectionInfo: WifiInfo!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/AudioMixer.kt:365:17 Variable 'hasData' is assigned but never accessed
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/AudioMixer.kt:376:25 The value 'false' assigned to 'var isPreRolling: Boolean defined in com.andrerinas.openheadunit.decoder.AudioMixer.mixLoop' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/AudioMixer.kt:387:25 The value 'true' assigned to 'var hasData: Boolean defined in com.andrerinas.openheadunit.decoder.AudioMixer.mixLoop' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/MicRecorder.kt:115:26 'stopBluetoothSco(): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/MicRecorder.kt:239:26 'startBluetoothSco(): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/VideoDecoder.kt:1424:17 Annotations on block-level expressions are being parsed differently depending on presence of a new line after them. Use new line if whole block-level expression must be annotated or wrap annotated expression in parentheses
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/VideoDecoder.kt:1424:64 'getter for inputBuffers: Array<(out) ByteBuffer!>' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/decoder/VideoDecoder.kt:2005:50 'getCodecInfoAt(Int): MediaCodecInfo!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/hud/BydCarServerTransport.kt:39:51 Type mismatch: inferred type is Class<*>? but Class<*> was expected
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/hud/BydCarServerTransport.kt:43:16 Type mismatch: inferred type is Any? but Any was expected
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/hud/BydCarServerTransport.kt:62:47 Type mismatch: inferred type is Class<*>? but Class<*> was expected
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/hud/BydNavigationMapper.kt:17:31 'nextTurnDetail: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDetail>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/hud/BydNavigationMapper.kt:26:25 'nextTurnDistance: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDistanceEvent>?' is deprecated. This message may be not send by device
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/ConnectionSetupFragment.kt:186:85 'SOFT_INPUT_ADJUST_RESIZE: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/DpiSettingsFragment.kt:158:41 Unnecessary safe call on a non-null receiver of type Display
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/DpiSettingsFragment.kt:158:43 'getRealMetrics(DisplayMetrics!): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/KeymapFragment.kt:154:60 'get(String!): Any?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/OnboardingActivity.kt:219:18 'fromHtml(String!): Spanned!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/QuickSettingsFragment.kt:81:17 Unnecessary safe call on a non-null receiver of type View
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/SettingsFragment.kt:327:29 'getParcelable(String?): T?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/SettingsFragment.kt:708:13 Variable 'app' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/SettingsFragment.kt:2634:44 'getRealMetrics(DisplayMetrics!): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/main/settings/SettingsAdapter.kt:133:47 Parameter 'position' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/AppLog.kt:293:70 'getter for id: Long' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/AppLog.kt:306:80 'getter for id: Long' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/BluetoothHelper.kt:35:53 No cast needed
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/BluetoothHelper.kt:65:46 No cast needed
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/BluetoothHelper.kt:241:60 Unchecked cast: Any! to Array<String>
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/BluetoothHelper.kt:339:60 Unchecked cast: Any! to Array<String>
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/BluetoothHelper.kt:380:60 No cast needed
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/HeadUnitScreenConfig.kt:79:41 'getter for defaultDisplay: Display!' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/HotspotManager.kt:473:86 'WifiConfiguration' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/HotspotNetworkProbe.kt:98:88 Unsafe use of a nullable receiver of type Any?
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/LocaleHelper.kt:22:29 Parameter 'context' is never used
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/LocaleHelper.kt:55:18 'constructor Locale(String!)' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/LocaleHelper.kt:56:18 'constructor Locale(String!, String!)' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/LocaleHelper.kt:57:18 'constructor Locale(String!, String!, String!)' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/NetworkAddresses.kt:33:16 'getter for allNetworks: Array<(out) Network!>' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/Settings.kt:1460:44 Elvis operator (?:) always returns the left operand of non-nullable type Settings.AppTheme
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SoftApConfigCompat.kt:145:60 'WifiConfiguration' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemOptimizer.kt:43:78 Unnecessary safe call on a non-null receiver of type Display
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:34:20 'setDecorFitsSystemWindows(Boolean): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:60:43 'SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:61:34 'SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:62:34 'SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:63:34 'SYSTEM_UI_FLAG_HIDE_NAVIGATION: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:66:47 'SYSTEM_UI_FLAG_IMMERSIVE_STICKY: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:69:68 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:70:47 'SYSTEM_UI_FLAG_LOW_PROFILE: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:74:43 'SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:74:84 'SYSTEM_UI_FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:76:68 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:77:47 'SYSTEM_UI_FLAG_LOW_PROFILE: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:83:70 'FLAG_FULLSCREEN: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:88:30 'setter for systemUiVisibility: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:96:28 'setter for statusBarColor: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:98:32 'setter for navigationBarColor: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:102:62 'FLAG_TRANSLUCENT_STATUS: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:104:66 'FLAG_TRANSLUCENT_NAVIGATION: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:132:29 'getSize(Point!): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/utils/SystemUI.kt:142:43 'removeGlobalOnLayoutListener(ViewTreeObserver.OnGlobalLayoutListener!): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/java/com/andrerinas/openheadunit/view/DpiPreviewView.kt:149:26 'getRealMetrics(DisplayMetrics!): Unit' is deprecated. Deprecated in Java
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/test/java/com/andrerinas/openheadunit/aap/SoftApBssidPolicyTest.kt:67:9 Name contains characters which can cause problems on Windows: "
+w: file:///home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/test/java/com/andrerinas/openheadunit/hud/BydNavigationMapperTest.kt:80:15 'nextTurnDetail: AapNavigationHelper.TimedMessage<NavigationStatus.NextTurnDetail>?' is deprecated. This message may be not send by device
