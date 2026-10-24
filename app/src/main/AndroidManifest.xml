@@ -55,6 +55,10 @@
         android:usesPermissionFlags="neverForLocation"
         tools:targetApi="s" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- GWM/Haval: read-only vehicle values (speed, fuel, range, odometer) from the head unit's
+         gwm_adapter service. A "normal" permission defined by com.gwm.android.adapter.server; without
+         it the adapter answers every request with no values. Unused on other head units. -->
+    <uses-permission android:name="com.gwm.android.adapter.permission.GET_DATA" />
     <!-- Optional, granted by the owner: follow the stock cluster screens (dashboard side map). -->
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -198,6 +202,12 @@
             android:name=".main.SettingsActivity"
             android:label="@string/settings"
             android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".gwm.GwmSettingsActivity"
+            android:exported="false"
+            android:label="@string/gwm_settings_title"
             android:theme="@style/AppTheme" />
 
         <activity

@@ -15,7 +15,13 @@ AGPL-3.0. See the root LICENSE and COPYRIGHT_MICHAEL_REID_GPLv3AFFERO.txt.
   Source: https://github.com/google/material-design-icons
 - Kotlin, AndroidX, Material Components, protobuf and other dependencies are declared
   in the Gradle build files. Their original notices and licenses apply.
-- Android Auto name and mark belong to Google. BYD belongs to its respective owner.
+- DiPlay GWM adapter (GPL-3.0-or-later, Copyright (C) 2026 jollyboy95): the GWM/Haval H7
+  display, vehicle-data, head-up and steering-observation code under `app/src/main/java/org/dplay/gwm/`
+  and `app/src/main/java/com/andrerinas/openheadunit/gwm/` is ported or adapted from
+  https://github.com/jollyboy95/d-play-gwm-h7 at commit 1460810. GPL-3.0 section 13 permits
+  combining it with this AGPL-3.0 work; the combined app is distributed under AGPL-3.0.
+  No CarPlay authentication material, credentials, signing keys or APKs were copied.
+- Android Auto name and mark belong to Google. BYD, GWM and Haval belong to their respective owners.
   Neither company endorses this independent project.
 
 ## BYD HUD maneuver icons

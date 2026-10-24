@@ -87,6 +87,11 @@ android {
                 cppFlags("")
             }
         }
+
+        // GWM H7 builds: -PgwmAbiFilters=arm64-v8a limits native code to the head unit's ABI.
+        (project.findProperty("gwmAbiFilters") as? String)?.takeIf { it.isNotBlank() }?.let { filters ->
+            ndk { abiFilters += filters.split(',').map { it.trim() } }
+        }
     }
 
     flavorDimensions.add("distribution")
@@ -103,6 +108,14 @@ android {
 
     signingConfigs {
         getByName("debug") {
+            // GWM H7: one development key for every build, so updates install over each other.
+            // The keystore is never committed; CI decodes it from the GWM_DEV_KEYSTORE_B64 secret.
+            System.getenv("GWM_DEV_KEYSTORE")?.let { file(it) }?.takeIf { it.exists() }?.let { key ->
+                storeFile = key
+                storePassword = System.getenv("GWM_DEV_KEYSTORE_PASSWORD") ?: "diautogwmdev"
+                keyAlias = System.getenv("GWM_DEV_KEY_ALIAS") ?: "diauto-gwm-dev"
+                keyPassword = System.getenv("GWM_DEV_KEYSTORE_PASSWORD") ?: "diautogwmdev"
+            }
             // storeFile = file("../keystore.jkc")
             // storePassword = property("HEADUNIT_KEYSTORE_PASSWORD") as String
             // keyAlias = property("HEADUNIT_KEYSTORE_ALIAS") as String
@@ -161,8 +174,12 @@ android {
         }
 
         getByName("debug") {
-            applicationIdSuffix = ".bydhudtest"
-            versionNameSuffix = "-hud-test"
+            // This fork's debug build is the GWM/Haval H7 build. Its own package id installs next to
+            // the official DiAuto (and Head Unit Revived, which shares DiAuto's id) instead of
+            // replacing it, so neither app's data is touched.
+            applicationIdSuffix = ".gwmh7"
+            val revision = (project.findProperty("gwmRevision") as? String)?.takeIf { it.isNotBlank() }
+            versionNameSuffix = if (revision != null) "-gwm.r$revision" else "-gwm.dev"
         }
     }
 
@@ -183,6 +200,16 @@ android {
     lint {
         abortOnError = false
         disable += "PackagedPrivateKey"
+        // CI for the GWM H7 port (-PgwmLintFast): the full pass overruns a hosted runner, so it
+        // runs only the correctness checks that matter when porting code to an Android 9 head unit.
+        if (project.hasProperty("gwmLintFast")) {
+            checkOnly += setOf(
+                "NewApi", "InlinedApi", "WrongConstant", "ResourceType", "MissingPermission",
+                "WrongThread", "Range", "StringFormatInvalid", "StringFormatMatches",
+                "StringFormatCount", "MissingDefaultResource", "MissingClass", "Instantiatable",
+                "DuplicateIds", "UnspecifiedRegisterReceiverFlag", "WrongViewCast",
+            )
+        }
     }
 
     compileOptions {
