@@ -114,7 +114,8 @@ internal class GwmHeadUpView(context: Context) : View(context) {
      */
     private fun drawStacked(canvas: Canvas, next: BydGuidance, distance: String, eta: String?, w: Float, h: Float) {
         val pad = h * 0.06f
-        val usableW = w - pad * 2f
+        // A wider margin on the right: the windscreen cuts the arrow window short on that side.
+        val usableW = w - pad * 3f
         val usableH = h - pad * 2f
         // Google Maps often names the next road "towards <place>"; in a 144 px window the place is
         // the useful part, so the prefix goes.
