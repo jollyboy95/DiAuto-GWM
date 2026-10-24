@@ -47,6 +47,15 @@ internal class GwmHeadUpView(context: Context) : View(context) {
         invalidate()
     }
 
+    /** Draw only inside this part of the display: the arrow window the windscreen shows. */
+    fun setArea(next: GwmSettings.HudArea) {
+        if (next == area) return
+        area = next
+        invalidate()
+    }
+
+    private var area = GwmSettings.HudArea(0, 0, 100, 100)
+
     fun setAnchor(next: Anchor) {
         if (next == anchor) return
         anchor = next
@@ -56,13 +65,19 @@ internal class GwmHeadUpView(context: Context) : View(context) {
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         val next = guidance ?: return
-        val w = width.toFloat()
-        val h = height.toFloat()
-        if (w <= 0f || h <= 0f) return
+        if (width <= 0 || height <= 0) return
+        val left = width * area.left / 100f
+        val top = height * area.top / 100f
+        val w = width * area.width / 100f
+        val h = height * area.height / 100f
         val distance = GwmFormat.distance(context, next.distanceMeters)
         val eta = GwmFormat.arrival(context, next)
+        canvas.save()
+        canvas.translate(left, top)
+        canvas.clipRect(0f, 0f, w, h)
         // A small, squarish arrow area gets the stacked layout.
         if (w < h * 2.2f) drawStacked(canvas, next, distance, eta, w, h) else drawRow(canvas, next, distance, eta, w, h)
+        canvas.restore()
     }
 
     private fun drawRow(canvas: Canvas, next: BydGuidance, distance: String, eta: String?, w: Float, h: Float) {

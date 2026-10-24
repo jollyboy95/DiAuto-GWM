@@ -60,8 +60,8 @@ Android Auto gives two separate things:
    can sit anywhere.
 
 The GWM safe area (`GwmClusterProfile`: top 31 %, bottom 25 %, sides 6 %) keeps the car marker and
-the app's own cards in the band between the custom navigation card and the instrument strip. If
-the app's own card and the custom card both show, turn the custom card off in settings.
+the app's own cards in the band between the custom navigation card and the instrument strip. Because
+the app's card cannot be turned off, DiAuto's own card is off by default; it can be turned on in settings.
 
 ### Music
 
@@ -125,7 +125,9 @@ branch and publishes `DiAuto-GWM-H7-arm64-debug.apk`, its `.sha256`, and test/li
    road, arrival time. Play music: the music card should show title, artist, artwork, progress.
 8. Check the stock gear indicator, READY, speed-limit/assist and ECO are all still visible and
    not covered. Photograph the cluster for spacing adjustments.
-9. Optional: switch on the HUD arrow, pick display 3, and check the arrow area during a route.
+9. Optional: switch on the HUD arrow and pick display 3. The windscreen shows only a small arrow
+   window of that display: tap **Show HUD grid**, note which lettered cells you can read, and set
+   the arrow area (left, top, width, height) to cover them. Then check the arrow during a route.
 10. Optional: **Watch steering-wheel keys** and press each button once; send the raw pairs back.
     Nothing is mapped to an action.
 11. Disconnect the phone: the cluster and HUD windows must disappear. Reconnect: they return.

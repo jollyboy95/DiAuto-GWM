@@ -27,7 +27,7 @@
     <string name="gwm_cluster_display" translatable="false">Cluster display</string>
     <string name="gwm_cluster_layer" translatable="false">Custom cluster layer</string>
     <string name="gwm_cluster_layer_description" translatable="false">Navigation card, music card and instrument strip over the map. Off shows the map alone.</string>
-    <string name="gwm_nav_card" translatable="false">Navigation card (top centre)</string>
+    <string name="gwm_nav_card" translatable="false">DiAuto turn card (top centre). Google Maps always adds its own card, so this is off by default</string>
     <string name="gwm_music_card" translatable="false">Music card (top right)</string>
     <string name="gwm_vehicle_strip" translatable="false">Instrument strip: fuel and range, speed, odometer</string>
     <string name="gwm_map_detail" translatable="false">Map labels and car marker size</string>
@@ -39,6 +39,13 @@
     <string name="gwm_hud_enabled_description" translatable="false">Arrow, distance and arrival time while a route is active. The car keeps showing speed and its own readouts.</string>
     <string name="gwm_hud_display" translatable="false">HUD display</string>
     <string name="gwm_hud_position" translatable="false">Position in the arrow area</string>
+    <string name="gwm_hud_grid_show" translatable="false">Show HUD grid (parked)</string>
+    <string name="gwm_hud_grid_hide" translatable="false">Hide HUD grid</string>
+    <string name="gwm_hud_area_note" translatable="false">The windscreen only shows the HUD's small arrow window. With the grid on, note which lettered cells you can read (columns A–J are 10 % each, rows 1–5 are 20 % each), then set the arrow area below to cover them. The orange box shows the current area.</string>
+    <string name="gwm_hud_area_left" translatable="false">Arrow area left</string>
+    <string name="gwm_hud_area_top" translatable="false">Arrow area top</string>
+    <string name="gwm_hud_area_width" translatable="false">Arrow area width</string>
+    <string name="gwm_hud_area_height" translatable="false">Arrow area height</string>
 
     <string name="gwm_section_status" translatable="false">Status</string>
     <string name="gwm_section_diagnostics" translatable="false">Diagnostics (parked only)</string>

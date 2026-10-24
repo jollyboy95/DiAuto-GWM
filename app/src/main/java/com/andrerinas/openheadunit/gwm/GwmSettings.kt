@@ -35,8 +35,12 @@ internal class GwmSettings(context: Context) {
         get() = prefs.getBoolean("styled-layer", true)
         set(value) = prefs.edit().putBoolean("styled-layer", value).apply()
 
+    /**
+     * DiAuto's own turn card. Off by default: Google Maps draws its own card into the cluster video
+     * and that cannot be switched off, so two cards would show.
+     */
     var navCard: Boolean
-        get() = prefs.getBoolean("nav-card", true)
+        get() = prefs.getBoolean("nav-card", false)
         set(value) = prefs.edit().putBoolean("nav-card", value).apply()
 
     var musicCard: Boolean
@@ -60,6 +64,30 @@ internal class GwmSettings(context: Context) {
     var hudAnchor: Int
         get() = prefs.getInt("hud-anchor", 1)
         set(value) = prefs.edit().putInt("hud-anchor", value).apply()
+
+    /**
+     * The part of the HUD display the windscreen actually shows (the arrow window), in percent of
+     * that display. Found with the HUD grid in diagnostics; the whole display until set.
+     */
+    var hudArea: HudArea
+        get() = HudArea(
+            prefs.getInt("hud-area-left", 0), prefs.getInt("hud-area-top", 0),
+            prefs.getInt("hud-area-width", 100), prefs.getInt("hud-area-height", 100),
+        ).sane()
+        set(value) {
+            val a = value.sane()
+            prefs.edit().putInt("hud-area-left", a.left).putInt("hud-area-top", a.top)
+                .putInt("hud-area-width", a.width).putInt("hud-area-height", a.height).apply()
+        }
+
+    data class HudArea(val left: Int, val top: Int, val width: Int, val height: Int) {
+        /** Inside the display, at least 5 % in each direction. */
+        fun sane(): HudArea {
+            val l = left.coerceIn(0, 95)
+            val t = top.coerceIn(0, 95)
+            return HudArea(l, t, width.coerceIn(5, 100 - l), height.coerceIn(5, 100 - t))
+        }
+    }
 
     companion object {
         const val PREFS = "gwm_h7"

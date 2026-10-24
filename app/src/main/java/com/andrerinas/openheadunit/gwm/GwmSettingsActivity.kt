@@ -159,6 +159,30 @@ class GwmSettingsActivity : BaseActivity() {
             gwm.hudDisplayId = it
             GwmOutputs.refresh(this)
         }
+        // The windscreen shows only the HUD's arrow window. Find it with the grid (each column 10 %,
+        // each row 20 % of the display), then set the area so the arrow is drawn inside it.
+        val gridOn = GwmOutputs.hudGridShowing
+        button(getString(if (gridOn) R.string.gwm_hud_grid_hide else R.string.gwm_hud_grid_show)) {
+            if (GwmOutputs.hudGridShowing) GwmOutputs.hideTest()
+            else GwmOutputs.showTest(this, gwm.hudDisplayId, gwm.hudArea)?.let { toast(it) }
+            render()
+        }
+        note(getString(R.string.gwm_hud_area_note))
+        val area = gwm.hudArea
+        val steps = (0..100 step 5).toList()
+        fun areaChoice(label: String, current: Int, apply: (Int) -> GwmSettings.HudArea) {
+            val labels = steps.map { "$it %" }.toTypedArray()
+            choice(label, labels, steps.indexOf(current - current % 5).coerceAtLeast(0), null) { index ->
+                gwm.hudArea = apply(steps[index])
+                GwmOutputs.refresh(this)
+                // Redraw the grid with the new box.
+                if (GwmOutputs.hudGridShowing) GwmOutputs.showTest(this, gwm.hudDisplayId, gwm.hudArea)
+            }
+        }
+        areaChoice(getString(R.string.gwm_hud_area_left), area.left) { area.copy(left = it) }
+        areaChoice(getString(R.string.gwm_hud_area_top), area.top) { area.copy(top = it) }
+        areaChoice(getString(R.string.gwm_hud_area_width), area.width) { area.copy(width = it) }
+        areaChoice(getString(R.string.gwm_hud_area_height), area.height) { area.copy(height = it) }
         val anchors = arrayOf("Left", "Centre", "Right")
         choice(getString(R.string.gwm_hud_position), anchors, gwm.hudAnchor.coerceIn(0, 2), null) {
             gwm.hudAnchor = it

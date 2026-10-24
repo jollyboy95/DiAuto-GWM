@@ -214,6 +214,7 @@ internal object GwmOutputs {
         val anchor = GwmHeadUpView.Anchor.entries.getOrElse(gwm.hudAnchor) { GwmHeadUpView.Anchor.CENTRE }
         if (hudView != null && hudDisplayId == target) {
             hudView?.setAnchor(anchor)
+            hudView?.setArea(gwm.hudArea)
             return
         }
         hideHud("moving to display $target")
@@ -223,7 +224,7 @@ internal object GwmOutputs {
             hudStatus = "No window manager for display $target."
             return
         }
-        val view = GwmHeadUpView(displayContext).apply { setAnchor(anchor) }
+        val view = GwmHeadUpView(displayContext).apply { setAnchor(anchor); setArea(gwm.hudArea) }
         try {
             windows.addView(view, overlayParams(opaque = false))
         } catch (error: RuntimeException) {
@@ -253,15 +254,18 @@ internal object GwmOutputs {
 
     // --- Parked display test ------------------------------------------------------------------
 
-    /** Shows DiPlay's labelled test pattern (no vehicle values) on [displayId]; null on success. */
-    fun showTest(context: Context, displayId: Int): String? {
+    /**
+     * Shows a parked test pattern on [displayId]: DiPlay's labelled pattern, or with [hudGrid] the
+     * lettered HUD grid and current arrow area. Null on success, else the reason.
+     */
+    fun showTest(context: Context, displayId: Int, hudGrid: GwmSettings.HudArea? = null): String? {
         hideTest()
         val app = context.applicationContext
         var problem: String? = null
         val display = usableDisplay(app, displayId) { problem = it } ?: return problem
         val displayContext = app.createDisplayContext(display)
         val windows = displayContext.getSystemService(WindowManager::class.java) ?: return "No window manager for display $displayId."
-        val view = GwmDisplayTestView(displayContext)
+        val view: View = if (hudGrid != null) GwmHudGridView(displayContext, hudGrid) else GwmDisplayTestView(displayContext)
         return try {
             windows.addView(view, overlayParams(opaque = false))
             testManager = windows
@@ -281,6 +285,7 @@ internal object GwmOutputs {
     }
 
     val testShowing: Boolean get() = testView != null
+    val hudGridShowing: Boolean get() = testView is GwmHudGridView
 
     // --- Helpers ------------------------------------------------------------------------------
 
