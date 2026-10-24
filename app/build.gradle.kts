@@ -200,6 +200,16 @@ android {
     lint {
         abortOnError = false
         disable += "PackagedPrivateKey"
+        // CI for the GWM H7 port (-PgwmLintFast): the full pass overruns a hosted runner, so it
+        // runs only the correctness checks that matter when porting code to an Android 9 head unit.
+        if (project.hasProperty("gwmLintFast")) {
+            checkOnly += setOf(
+                "NewApi", "InlinedApi", "WrongConstant", "ResourceType", "MissingPermission",
+                "WrongThread", "Range", "StringFormatInvalid", "StringFormatMatches",
+                "StringFormatCount", "MissingDefaultResource", "MissingClass", "Instantiatable",
+                "DuplicateIds", "UnspecifiedRegisterReceiverFlag", "WrongViewCast",
+            )
+        }
     }
 
     compileOptions {

@@ -14,9 +14,10 @@ on:
 permissions:
   contents: write
 
+# A newer push supersedes an older build of the same branch.
 concurrency:
   group: gwm-h7-apk-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 env:
   APK_NAME: DiAuto-GWM-H7-arm64-debug.apk
@@ -138,16 +139,7 @@ jobs:
             ${{ env.APK_NAME }}.sha256
           if-no-files-found: error
 
-      # Lint is slow on this project (30+ minutes on a hosted runner), so it runs after the APK
-      # is built and uploaded, with its own time limit.
-      - name: Lint
-        id: lint
-        if: steps.assemble.outcome == 'success'
-        continue-on-error: true
-        timeout-minutes: 50
-        run: $RUNNER_TEMP/gradle-step.sh lint :app:lintGithubDebug -PgwmAbiFilters=arm64-v8a
-
-      - name: Summarise tests and lint
+      - name: Summarise tests
         if: always()
         run: |
           python3 - "$RUNNER_TEMP/reports" <<'EOF'
@@ -164,23 +156,8 @@ jobs:
           with open(os.path.join(out, 'tests.txt'), 'w') as fh:
               fh.write(f"tests={tests} failures={fails} errors={errors} skipped={skipped}\n")
               fh.write('\n'.join(failed) + '\n')
-          lint = glob.glob('app/build/reports/lint-results-githubDebug.xml')
-          rows = []
-          if lint:
-              for issue in ET.parse(lint[0]).getroot().iter('issue'):
-                  loc = issue.find('location')
-                  path = loc.get('file', '') if loc is not None else ''
-                  rows.append((issue.get('severity'), issue.get('id'), path.split('/app/')[-1],
-                               loc.get('line', '') if loc is not None else '', (issue.get('message') or '')[:200]))
-          with open(os.path.join(out, 'lint.txt'), 'w') as fh:
-              from collections import Counter
-              fh.write('lint issues by severity: ' + str(dict(Counter(r[0] for r in rows))) + '\n')
-              # Errors anywhere, and every issue in GWM code, in full.
-              for r in rows:
-                  if r[0] in ('Error', 'Fatal') or 'gwm' in r[2].lower():
-                      fh.write(' | '.join(r) + '\n')
           EOF
-          cat "$RUNNER_TEMP/reports/tests.txt" "$RUNNER_TEMP/reports/lint.txt" | head -80
+          cat "$RUNNER_TEMP/reports/tests.txt" | head -80
 
       - name: Publish reports and APK to the builds branch
         if: always()
@@ -207,21 +184,101 @@ jobs:
                 "| Revision | Built (UTC) | Branch | Source | Result | APK SHA-256 |" \
                 "| --- | --- | --- | --- | --- | --- |" > REVISIONS.md
             fi
-            rm -rf reports; mkdir -p reports; cp "$stash"/reports/* reports/ 2>/dev/null || true
+            mkdir -p reports; cp "$stash"/reports/* reports/ 2>/dev/null || true
             result=failed
             if $ok; then cp "$stash/$APK_NAME" "$stash/$APK_NAME.sha256" .; result=ok; fi
             sha=$($ok && cut -d' ' -f1 "$APK_NAME.sha256" || echo "-")
             printf '| %s | %s | %s | %s | %s | `%s` |\n' "$rev" "$(date -u '+%Y-%m-%d %H:%M')" "$GITHUB_REF_NAME" \
               "${GITHUB_SHA::7}" "$result" "$sha" >> REVISIONS.md
-            git add -A
+            git rm -rq --ignore-unmatch .kotlin
+            git add -A REVISIONS.md reports $($ok && echo "$APK_NAME $APK_NAME.sha256")
             git commit -q -m "GWM H7 $rev: $result (${GITHUB_SHA::7}) [skip ci]"
             git push origin "publish:$BUILDS_BRANCH" && exit 0
             sleep 5
           done
           exit 1
 
-      - name: Fail if tests or lint failed
-        if: steps.tests.outcome != 'success' || steps.lint.outcome != 'success' || steps.l10n.outcome != 'success'
+      - name: Fail if tests or translations failed
+        if: steps.tests.outcome != 'success' || steps.l10n.outcome != 'success'
         run: |
-          echo "::error::tests=${{ steps.tests.outcome }} lint=${{ steps.lint.outcome }} translations=${{ steps.l10n.outcome }}"
+          echo "::error::tests=${{ steps.tests.outcome }} translations=${{ steps.l10n.outcome }}"
           exit 1
+
+  # Lint runs beside the APK build. The full lint pass on this project overruns 50 minutes on a
+  # hosted runner, so CI runs the correctness checks that matter for a port (API levels,
+  # permissions, threads, resources, string formats) via -PgwmLintFast; run without it locally
+  # for the full set.
+  lint:
+    if: github.ref != 'refs/heads/gwm-h7-builds'
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
+          log-accepted-android-sdk-licenses: false
+      - name: Install pinned SDK, NDK and CMake
+        run: |
+          for attempt in 1 2 3; do
+            sdkmanager "platforms;android-36" "build-tools;36.0.0" "ndk;29.0.14206865" "cmake;3.22.1" && exit 0
+            sleep 15
+          done
+          exit 1
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Lint (correctness checks)
+        id: lint
+        continue-on-error: true
+        timeout-minutes: 60
+        run: ./gradlew :app:lintGithubDebug -PgwmAbiFilters=arm64-v8a -PgwmLintFast --stacktrace 2>&1 | tail -60; exit ${PIPESTATUS[0]}
+      - name: Summarise lint
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          python3 - "$RUNNER_TEMP/out/lint.txt" "${{ steps.lint.outcome }}" <<'EOF'
+          import glob, sys, xml.etree.ElementTree as ET
+          from collections import Counter
+          out, outcome = sys.argv[1], sys.argv[2]
+          rows = []
+          for f in glob.glob('app/build/reports/lint-results-githubDebug.xml'):
+              for issue in ET.parse(f).getroot().iter('issue'):
+                  loc = issue.find('location')
+                  path = loc.get('file', '') if loc is not None else ''
+                  rows.append((issue.get('severity'), issue.get('id'), path.split('/app/')[-1],
+                               loc.get('line', '') if loc is not None else '', (issue.get('message') or '')[:200]))
+          gwm = [r for r in rows if 'gwm' in r[2].lower()]
+          with open(out, 'w') as fh:
+              fh.write(f"lint step: {outcome}; report found: {bool(glob.glob('app/build/reports/lint-results-githubDebug.xml'))}\n")
+              fh.write('all issues by severity: ' + str(dict(Counter(r[0] for r in rows))) + '\n')
+              fh.write('issues in GWM files: ' + str(dict(Counter(r[0] for r in gwm))) + '\n')
+              for r in rows:
+                  if r[0] in ('Error', 'Fatal') or r in gwm:
+                      fh.write(' | '.join(r) + '\n')
+          print(open(out).read()[:4000])
+          EOF
+      - name: Publish the lint report to the builds branch
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          rev="r${{ github.run_number }}"
+          for i in 1 2 3 4 5 6; do
+            if ! git ls-remote --exit-code --heads origin "$BUILDS_BRANCH" >/dev/null; then sleep 30; continue; fi
+            git fetch --depth=1 origin "$BUILDS_BRANCH"
+            git checkout -f -B publish-lint FETCH_HEAD
+            mkdir -p reports
+            cp "$RUNNER_TEMP/out/lint.txt" "reports/lint-$rev.txt"
+            git add "reports/lint-$rev.txt"
+            git commit -q -m "GWM H7 $rev: lint report (${GITHUB_SHA::7}) [skip ci]"
+            git push origin "publish-lint:$BUILDS_BRANCH" && exit 0
+            sleep 10
+          done
+          exit 1
+      - name: Fail if lint failed
+        if: steps.lint.outcome != 'success'
+        run: exit 1
