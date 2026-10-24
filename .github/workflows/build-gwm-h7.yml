@@ -26,7 +26,7 @@ jobs:
   apk:
     if: github.ref != 'refs/heads/gwm-h7-builds'
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 110
     steps:
       - uses: actions/checkout@v4
 
@@ -100,11 +100,6 @@ jobs:
         continue-on-error: true
         run: $RUNNER_TEMP/gradle-step.sh unit-tests :app:testGithubDebugUnitTest -PgwmAbiFilters=arm64-v8a
 
-      - name: Lint
-        id: lint
-        continue-on-error: true
-        run: $RUNNER_TEMP/gradle-step.sh lint :app:lintGithubDebug -PgwmAbiFilters=arm64-v8a
-
       - name: Assemble arm64-v8a debug APK
         id: assemble
         run: $RUNNER_TEMP/gradle-step.sh assemble :app:assembleGithubDebug -PgwmAbiFilters=arm64-v8a -PgwmRevision=${{ github.run_number }}
@@ -142,6 +137,15 @@ jobs:
             ${{ env.APK_NAME }}
             ${{ env.APK_NAME }}.sha256
           if-no-files-found: error
+
+      # Lint is slow on this project (30+ minutes on a hosted runner), so it runs after the APK
+      # is built and uploaded, with its own time limit.
+      - name: Lint
+        id: lint
+        if: steps.assemble.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 50
+        run: $RUNNER_TEMP/gradle-step.sh lint :app:lintGithubDebug -PgwmAbiFilters=arm64-v8a
 
       - name: Summarise tests and lint
         if: always()
