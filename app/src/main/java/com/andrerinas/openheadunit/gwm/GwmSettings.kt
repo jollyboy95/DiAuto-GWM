@@ -62,17 +62,18 @@ internal class GwmSettings(context: Context) {
         set(value) = prefs.edit().putInt("hud-display-id", value).apply()
 
     var hudAnchor: Int
-        get() = prefs.getInt("hud-anchor", 1)
+        get() = prefs.getInt("hud-anchor", 0)
         set(value) = prefs.edit().putInt("hud-anchor", value).apply()
 
     /**
      * The part of the HUD display the windscreen actually shows (the arrow window), in percent of
-     * that display. Found with the HUD grid in diagnostics; the whole display until set.
+     * that display. Defaults to the window measured on the 2026 H7 (cells A3 to C4 of the HUD grid:
+     * left 0 %, top 40 %, 30 % x 40 %); adjust with the HUD grid in diagnostics.
      */
     var hudArea: HudArea
         get() = HudArea(
-            prefs.getInt("hud-area-left", 0), prefs.getInt("hud-area-top", 0),
-            prefs.getInt("hud-area-width", 100), prefs.getInt("hud-area-height", 100),
+            prefs.getInt("hud-area-left", 0), prefs.getInt("hud-area-top", 40),
+            prefs.getInt("hud-area-width", 30), prefs.getInt("hud-area-height", 40),
         ).sane()
         set(value) {
             val a = value.sane()

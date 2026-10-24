@@ -107,27 +107,48 @@ internal class GwmHeadUpView(context: Context) : View(context) {
         }
     }
 
-    /** Arrow on top, distance under it, arrival time last; everything centred and sized to fit. */
+    /**
+     * The H7's arrow window (about 144x96 px): the layout DiPlay's CarPlay HUD uses there, which
+     * reads well on the windscreen. Arrow and distance on the first line, arrival time under it,
+     * both as large as the window allows, with a margin so nothing is clipped at the edges.
+     */
     private fun drawStacked(canvas: Canvas, next: BydGuidance, distance: String, eta: String?, w: Float, h: Float) {
-        val lines = if (eta != null) 3.0f else 2.3f
-        val unit = minOf(h / lines, w * 0.62f)
-        val arrow = unit * 1.05f
-        val total = arrow + unit * 0.75f + (if (eta != null) unit * 0.55f else 0f)
-        var y = (h - total) / 2f
-        val cx = w / 2f
-        drawArrow(canvas, next, cx - arrow / 2f, y, arrow)
-        y += arrow
-        distancePaint.textSize = unit * 0.55f
-        distancePaint.textAlign = Paint.Align.CENTER
-        canvas.drawText(ellipsize(distance, w * 0.96f, distancePaint), cx, y + unit * 0.62f, distancePaint)
-        distancePaint.textAlign = Paint.Align.LEFT
-        y += unit * 0.75f
+        val pad = h * 0.06f
+        val usableW = w - pad * 2f
+        val usableH = h - pad * 2f
+        // First line takes ~58 % of the height with an arrival time under it, all of it without.
+        val lineH = if (eta != null) usableH * 0.58f else usableH
+        var arrow = lineH * 0.92f
+        distancePaint.textSize = lineH * 0.72f
+        val gap = arrow * 0.18f
+        // Shrink the first line until arrow + gap + distance fits the width.
+        val wanted = arrow + gap + distancePaint.measureText(distance)
+        if (wanted > usableW) {
+            val k = usableW / wanted
+            arrow *= k
+            distancePaint.textSize *= k
+        }
+        val rowW = arrow + gap + distancePaint.measureText(distance)
+        val left = pad + when (anchor) {
+            Anchor.LEFT -> 0f
+            Anchor.CENTRE -> (usableW - rowW) / 2f
+            Anchor.RIGHT -> usableW - rowW
+        }.coerceAtLeast(0f)
+        val top = pad + if (eta != null) 0f else (usableH - lineH) / 2f
+        val mid = top + lineH / 2f
+        drawArrow(canvas, next, left, mid - arrow / 2f, arrow)
+        val textY = mid - (distancePaint.descent() + distancePaint.ascent()) / 2f
+        canvas.drawText(distance, left + arrow + gap, textY, distancePaint)
         eta?.let {
-            etaPaint.textSize = unit * 0.36f
-            etaPaint.textAlign = Paint.Align.CENTER
-            val label = context.getString(R.string.gwm_hud_arrival)
-            canvas.drawText(ellipsize("$label $it", w * 0.96f, etaPaint), cx, y + unit * 0.42f, etaPaint)
-            etaPaint.textAlign = Paint.Align.LEFT
+            etaPaint.textSize = (usableH - lineH) * 0.80f
+            val shown = ellipsize(it, usableW, etaPaint)
+            val etaW = etaPaint.measureText(shown)
+            val etaLeft = pad + when (anchor) {
+                Anchor.LEFT -> 0f
+                Anchor.CENTRE -> (usableW - etaW) / 2f
+                Anchor.RIGHT -> usableW - etaW
+            }.coerceAtLeast(0f)
+            canvas.drawText(shown, etaLeft, pad + usableH - etaPaint.descent(), etaPaint)
         }
     }
 
