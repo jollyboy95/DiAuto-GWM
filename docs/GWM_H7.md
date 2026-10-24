@@ -23,7 +23,7 @@ credentials, signing keys or APKs were copied. See `docs/THIRD_PARTY.md` for lic
 | Display enumeration and dump (`GwmDisplayAdapter`) | Diagnostic | `org/dplay/gwm/GwmDisplayAdapter.java` |
 | Platform detection and settings (`GwmMode`, persistence) | Working | `gwm/GwmMode.kt`, `gwm/GwmSettings.kt` (own preferences file) |
 | Head-up arrow strip (`GwmHeadUpView`) | Partly built | `gwm/GwmHeadUpView.kt`: arrow, distance, arrival only |
-| Steering observer (`GwmSteeringKeyObserver`) | Experimental, codes unverified, nothing mapped | `org/dplay/gwm/GwmSteeringKeyObserver.java`, read-only probe in settings |
+| Steering observer (`GwmSteeringKeyObserver`) | Polled `sys.other.keyevent_notify` as a system property; never saw a key | Replaced: that id is a gwm_adapter data id (GwmAdapterServer.apk). `gwm/GwmSteeringKeys.kt` registers a data-change listener; `connection/carkey/GwmAdapterKeyReceiver.kt` feeds the firmware codes (1000–1007, 2000–2007, 4000–4004) into DiAuto's Keymap, where each button is assigned to an Android Auto action |
 | Parked test pattern (`GwmDisplayTestView`) | Diagnostic | `org/dplay/gwm/GwmDisplayTestView.java`, shown as an overlay |
 | Old circular dial renderer (`ClusterDialView`) | Superseded | Not ported (the approved design has no large gauges) |
 | CarPlay-specific `MAP_WITH_CUSTOM_CARD` request | CarPlay only | No Android Auto equivalent; see "Navigation cards" |
@@ -128,8 +128,9 @@ branch and publishes `DiAuto-GWM-H7-arm64-debug.apk`, its `.sha256`, and test/li
 9. Optional: switch on the HUD arrow and pick display 3. The windscreen shows only a small arrow
    window of that display: tap **Show HUD grid**, note which lettered cells you can read, and set
    the arrow area (left, top, width, height) to cover them. Then check the arrow during a route.
-10. Optional: **Watch steering-wheel keys** and press each button once; send the raw pairs back.
-    Nothing is mapped to an action.
+10. **Show steering-wheel key codes** and press each button once to see its code. With Android Auto
+    connected, open Settings → Keymap, pick an action and press the button to assign it.
+    Unassigned buttons are ignored by DiAuto and keep their factory behaviour.
 11. Disconnect the phone: the cluster and HUD windows must disappear. Reconnect: they return.
 
 Report anything that differs. Don't treat any of this as confirmed until those steps pass.

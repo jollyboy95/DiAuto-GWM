@@ -24,7 +24,6 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.switchmaterial.SwitchMaterial
 import org.dplay.gwm.GwmDisplayAdapter
-import org.dplay.gwm.GwmSteeringKeyObserver
 import kotlin.concurrent.thread
 
 /**
@@ -37,7 +36,7 @@ class GwmSettingsActivity : BaseActivity() {
     private lateinit var content: LinearLayout
     private lateinit var gwm: GwmSettings
     private var scanResult: String? = null
-    private var steering: GwmSteeringKeyObserver? = null
+    private var steering: ((GwmSteeringKeys.Event) -> Unit)? = null
     private val steeringEvents = ArrayDeque<String>()
     private var steeringLabel: TextView? = null
 
@@ -232,21 +231,22 @@ class GwmSettingsActivity : BaseActivity() {
         steeringLabel = note(steeringText(), selectable = true, mono = true)
     }
 
-    // --- Steering observation (read only; ported observer, no mapping) -------------------------
+    // --- Steering keys: live codes from gwm_adapter; mapping is done in Key mapping ----------
 
     private fun startSteering() {
         steeringEvents.clear()
-        steering = GwmSteeringKeyObserver { observation ->
-            if (steering != null) {
-                steeringEvents.addFirst(observation.toString())
-                while (steeringEvents.size > 8) steeringEvents.removeLast()
-                steeringLabel?.text = steeringText()
-            }
-        }.also { it.start() }
+        val listener: (GwmSteeringKeys.Event) -> Unit = { event ->
+            steeringEvents.addFirst(event.toString())
+            while (steeringEvents.size > 10) steeringEvents.removeLast()
+            steeringLabel?.text = steeringText()
+        }
+        steering = listener
+        GwmSteeringKeys.addListener(this, listener)
+        toast(GwmSteeringKeys.status)
     }
 
     private fun stopSteering() {
-        steering?.stop()
+        steering?.let { GwmSteeringKeys.removeListener(it) }
         steering = null
     }
 
