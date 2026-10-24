@@ -11,3 +11,4 @@ Build output only. Source lives on the gwm-h7-* branches.
 | r5 | 2026-10-24 03:37 | gwm-h7-port | 1048e99 | ok | `da5131de35d64f1947158b19bc656def9dcfbe3530457b1458f162c6e8d14aad` |
 | r6 | 2026-10-24 06:56 | gwm-h7-port | 584de70 | failed | `-` |
 | r7 | 2026-10-24 06:58 | gwm-h7-port | a44b249 | failed | `-` |
+| r8 | 2026-10-24 07:04 | gwm-h7-port | 2f05cf1 | ok | `1140359b9d687762ece7629da10a478d4b3ce20e0d4d5edd8d96db39dee7a67f` |
