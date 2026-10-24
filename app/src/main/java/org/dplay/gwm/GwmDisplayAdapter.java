@@ -28,13 +28,14 @@ import java.util.Locale;
  * actually reports, so a wrong guess fails loudly rather than silently drawing on
  * the main screen.
  */
-// DiAuto: minSdk is 16, and multi-display APIs arrived in API 17.
-@RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+// DiAuto: minSdk is 16 and multi-display APIs arrived in API 17, so instances need API 17;
+// the static build-identity check works on any version.
 public final class GwmDisplayAdapter {
 
     private final DisplayManager dm;
     private final Context context;
 
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public GwmDisplayAdapter(Context context) {
         this.context = context.getApplicationContext();
         this.dm = (DisplayManager) this.context.getSystemService(Context.DISPLAY_SERVICE);
@@ -54,6 +55,7 @@ public final class GwmDisplayAdapter {
     }
 
     /** Human-readable list of every display the device reports. Log this on the car. */
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public String dump() {
         StringBuilder sb = new StringBuilder("GWM display dump:\n");
         if (dm == null) return sb.append("  DisplayManager unavailable\n").toString();
@@ -66,7 +68,8 @@ public final class GwmDisplayAdapter {
             d.getRealSize(size);
             sb.append(String.format(Locale.US,
                     "  id=%d  name=\"%s\"  size=%dx%d  state=%d  flags=0x%x  presentation=%s  valid=%s%n",
-                    d.getDisplayId(), d.getName(), size.x, size.y, d.getState(),
+                    d.getDisplayId(), d.getName(), size.x, size.y,
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT_WATCH ? d.getState() : -1,
                     d.getFlags(), (d.getFlags() & Display.FLAG_PRESENTATION) != 0, d.isValid()));
         }
         return sb.toString();
@@ -80,6 +83,7 @@ public final class GwmDisplayAdapter {
      *         then inspect {@link #dump()} and update the config — never fall back to
      *         the primary display silently).
      */
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public int pickClusterDisplayId(GwmAdapterConfig config) {
         Display[] displays = dm.getDisplays();
         // Pass 1: exact preferred logical id with matching size.
@@ -102,6 +106,7 @@ public final class GwmDisplayAdapter {
         return -1;
     }
 
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     private static boolean sizeMatches(Display d, GwmAdapterConfig.DisplayHint hint) {
         if (hint.expectWidth <= 0 || hint.expectHeight <= 0) return true;
         Point size = new Point();
@@ -111,10 +116,12 @@ public final class GwmDisplayAdapter {
                 || (size.x == hint.expectHeight && size.y == hint.expectWidth);
     }
 
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public Display getDisplay(int logicalId) {
         return dm == null ? null : dm.getDisplay(logicalId);
     }
 
+    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public Display[] getDisplays() {
         return dm == null ? new Display[0] : dm.getDisplays();
     }

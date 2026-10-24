@@ -9,7 +9,6 @@ import android.provider.Settings as SystemSettings
 import android.util.TypedValue
 import android.view.Display
 import android.view.Gravity
-import android.view.View
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
@@ -299,7 +298,6 @@ class GwmSettingsActivity : BaseActivity() {
         alpha = 0.8f
         if (mono) typeface = Typeface.MONOSPACE
         setTextIsSelectable(selectable)
-        textAlignment = View.TEXT_ALIGNMENT_VIEW_START
     }.also { content.addView(it, LinearLayout.LayoutParams(-1, -2).apply { topMargin = dp(4) }) }
 
     private fun toast(text: String) = Toast.makeText(this, text, Toast.LENGTH_LONG).show()

@@ -18,6 +18,7 @@ import com.andrerinas.openheadunit.hud.ClusterTurnCardView
  * draw in the arrow area, so nothing else is drawn and the background stays transparent.
  * Adapted from DiPlay's GwmHeadUpView (jollyboy95/d-play-gwm-h7 @ 1460810, GPL-3.0-or-later).
  */
+@androidx.annotation.RequiresApi(android.os.Build.VERSION_CODES.O)
 internal class GwmHeadUpView(context: Context) : View(context) {
     enum class Anchor { LEFT, CENTRE, RIGHT }
 

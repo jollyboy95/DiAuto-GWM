@@ -34,6 +34,7 @@ import kotlin.math.roundToInt
  * Only real values are drawn. A value the car does not report shows a dash; when the whole data
  * feed stops, the strip says so instead of freezing the last numbers.
  */
+@androidx.annotation.RequiresApi(android.os.Build.VERSION_CODES.O)
 internal class GwmClusterLayerView(context: Context, private val settings: GwmSettings) : View(context) {
     private var snapshot: GwmVehicleData.Snapshot? = null
     /** True once the vehicle feed has delivered anything this session: null afterwards is "stale". */
