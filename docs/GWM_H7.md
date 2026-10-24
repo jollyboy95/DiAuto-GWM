@@ -19,7 +19,7 @@ credentials, signing keys or APKs were copied. See `docs/THIRD_PARTY.md` for lic
 | --- | --- | --- |
 | Live cluster stream in an overlay window on display 2 (`GwmLiveProjectionOverlay`) | Working on the H7 (Apple Maps cluster stream shown) | Same window route, fed by DiAuto's Android Auto cluster stream: `gwm/GwmOutputs.kt` |
 | Aston-style layer (`GwmClusterHudView`) | Built, iterated on the car (r9–r15) | `gwm/GwmClusterLayerView.kt`, adapted to Android Auto data, with explicit unavailable/stale states |
-| `gwm_adapter` vehicle reads (`GwmVehicleData`) | Built; reads speed, gear, fuel, range, temperature, odometer | `gwm/GwmVehicleData.kt` (unchanged logic) |
+| `gwm_adapter` vehicle reads (`GwmVehicleData`) | Built; on the H7 every value came back empty | `gwm/GwmVehicleData.kt`, plus the `com.gwm.android.adapter.permission.GET_DATA` permission (protection level normal) that the adapter checks before answering — found in `GwmAdapterServer.apk` on the car |
 | Display enumeration and dump (`GwmDisplayAdapter`) | Diagnostic | `org/dplay/gwm/GwmDisplayAdapter.java` |
 | Platform detection and settings (`GwmMode`, persistence) | Working | `gwm/GwmMode.kt`, `gwm/GwmSettings.kt` (own preferences file) |
 | Head-up arrow strip (`GwmHeadUpView`) | Partly built | `gwm/GwmHeadUpView.kt`: arrow, distance, arrival only |
