@@ -108,20 +108,27 @@ internal class GwmHeadUpView(context: Context) : View(context) {
     }
 
     /**
-     * The H7's arrow window (about 144x96 px): the layout DiPlay's CarPlay HUD uses there, which
-     * reads well on the windscreen. Arrow and distance on the first line, arrival time under it,
-     * both as large as the window allows, with a margin so nothing is clipped at the edges.
+     * The H7's arrow window (about 144x96 px), after DiPlay's CarPlay HUD: arrow and distance on
+     * the first line, the street under it, then the arrival time. Lines that the phone does not
+     * report are left out and the rest grow to use the space. A margin keeps text off the edges.
      */
     private fun drawStacked(canvas: Canvas, next: BydGuidance, distance: String, eta: String?, w: Float, h: Float) {
         val pad = h * 0.06f
         val usableW = w - pad * 2f
         val usableH = h - pad * 2f
-        // First line takes ~58 % of the height with an arrival time under it, all of it without.
-        val lineH = if (eta != null) usableH * 0.58f else usableH
+        val road = GwmFormat.road(context, next).trim()
+        val extraLines = (if (road.isNotEmpty()) 1 else 0) + (if (eta != null) 1 else 0)
+        // The first line gets the most room; each extra line about a quarter of the height.
+        val lineH = when (extraLines) {
+            0 -> usableH
+            1 -> usableH * 0.58f
+            else -> usableH * 0.46f
+        }
+        val smallH = if (extraLines == 0) 0f else (usableH - lineH) / extraLines
+
         var arrow = lineH * 0.92f
         distancePaint.textSize = lineH * 0.72f
         val gap = arrow * 0.18f
-        // Shrink the first line until arrow + gap + distance fits the width.
         val wanted = arrow + gap + distancePaint.measureText(distance)
         if (wanted > usableW) {
             val k = usableW / wanted
@@ -129,28 +136,33 @@ internal class GwmHeadUpView(context: Context) : View(context) {
             distancePaint.textSize *= k
         }
         val rowW = arrow + gap + distancePaint.measureText(distance)
-        val left = pad + when (anchor) {
-            Anchor.LEFT -> 0f
-            Anchor.CENTRE -> (usableW - rowW) / 2f
-            Anchor.RIGHT -> usableW - rowW
-        }.coerceAtLeast(0f)
-        val top = pad + if (eta != null) 0f else (usableH - lineH) / 2f
+        val left = pad + offset(usableW, rowW)
+        val top = pad + if (extraLines == 0) (usableH - lineH) / 2f else 0f
         val mid = top + lineH / 2f
         drawArrow(canvas, next, left, mid - arrow / 2f, arrow)
-        val textY = mid - (distancePaint.descent() + distancePaint.ascent()) / 2f
-        canvas.drawText(distance, left + arrow + gap, textY, distancePaint)
+        canvas.drawText(distance, left + arrow + gap, mid - (distancePaint.descent() + distancePaint.ascent()) / 2f, distancePaint)
+
+        var y = top + lineH
+        if (road.isNotEmpty()) {
+            etaLabelPaint.textSize = smallH * 0.78f
+            val shown = ellipsize(road, usableW, etaLabelPaint)
+            y += smallH
+            canvas.drawText(shown, pad + offset(usableW, etaLabelPaint.measureText(shown)), y - etaLabelPaint.descent(), etaLabelPaint)
+        }
         eta?.let {
-            etaPaint.textSize = (usableH - lineH) * 0.80f
+            etaPaint.textSize = smallH * 0.80f
             val shown = ellipsize(it, usableW, etaPaint)
-            val etaW = etaPaint.measureText(shown)
-            val etaLeft = pad + when (anchor) {
-                Anchor.LEFT -> 0f
-                Anchor.CENTRE -> (usableW - etaW) / 2f
-                Anchor.RIGHT -> usableW - etaW
-            }.coerceAtLeast(0f)
-            canvas.drawText(shown, etaLeft, pad + usableH - etaPaint.descent(), etaPaint)
+            y += smallH
+            canvas.drawText(shown, pad + offset(usableW, etaPaint.measureText(shown)), y - etaPaint.descent(), etaPaint)
         }
     }
+
+    /** Horizontal offset of a [content]-wide line inside [available] for the chosen anchor. */
+    private fun offset(available: Float, content: Float): Float = when (anchor) {
+        Anchor.LEFT -> 0f
+        Anchor.CENTRE -> (available - content) / 2f
+        Anchor.RIGHT -> available - content
+    }.coerceAtLeast(0f)
 
     private fun drawArrow(canvas: Canvas, next: BydGuidance, left: Float, top: Float, side: Float) {
         val res = ClusterTurnCardView.glyphRes(next.clusterIcon)
