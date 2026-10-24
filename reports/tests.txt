@@ -1,3 +1,2 @@
-tests=701 failures=2 errors=0 skipped=0
-com.andrerinas.openheadunit.gwm.GwmSteeringKeysTest.the adapter's key string parses into code and action: java.lang.ExceptionInInitializerError
-com.andrerinas.openheadunit.gwm.GwmSteeringKeysTest.junk and unknown actions are ignored: java.lang.NoClassDefFoundError: Could not initialize class com.andrerinas.openheadunit.gwm.GwmSteeringKeys
+tests=701 failures=0 errors=0 skipped=0
+

@@ -1,6 +1,6 @@
-revision: r10
-source: 873a8b7d4c15543fc4c386a68a7337fd0764516a (gwm-h7-port)
-apk: DiAuto-GWM-H7-arm64-debug.apk (15403419 bytes)
-sha256: 622d7ab793f8e565f73d800954755015818c4168682ca4fa09091af23ffea013
+revision: r11
+source: f47cf311aeaf22b17eb593f7f5037122385f25b3 (gwm-h7-port)
+apk: DiAuto-GWM-H7-arm64-debug.apk (15404164 bytes)
+sha256: 73318c88220c64cf61d6ff77f2bd9172cda3f49689891c4376c58e193fe044b7
 abis: arm64-v8a 
 signing: consistent development key
