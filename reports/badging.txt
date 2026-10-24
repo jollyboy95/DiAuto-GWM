@@ -1,0 +1,4 @@
+package: name='com.andrerinas.headunitrevived.gwmh7' versionCode='112' versionName='0.3.12-gwm.r4' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+targetSdkVersion:'36'
+application-label:'DiAuto GWM'
+native-code: 'arm64-v8a'
