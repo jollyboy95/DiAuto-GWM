@@ -41,7 +41,7 @@
     <string name="gwm_hud_position" translatable="false">Position in the arrow area</string>
     <string name="gwm_hud_grid_show" translatable="false">Show HUD grid (parked)</string>
     <string name="gwm_hud_grid_hide" translatable="false">Hide HUD grid</string>
-    <string name="gwm_hud_area_note" translatable="false">The windscreen only shows the HUD's small arrow window. With the grid on, note which lettered cells you can read (columns A–J are 10 % each, rows 1–5 are 20 % each), then set the arrow area below to cover them. The orange box shows the current area.</string>
+    <string name="gwm_hud_area_note" translatable="false">The windscreen only shows the HUD\'s small arrow window. With the grid on, note which lettered cells you can read (columns A to J are a tenth of the width each, rows 1 to 5 a fifth of the height each), then set the arrow area below to cover them. The orange box shows the current area.</string>
     <string name="gwm_hud_area_left" translatable="false">Arrow area left</string>
     <string name="gwm_hud_area_top" translatable="false">Arrow area top</string>
     <string name="gwm_hud_area_width" translatable="false">Arrow area width</string>
