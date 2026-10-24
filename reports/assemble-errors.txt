@@ -1,0 +1,16 @@
+> Configure project :app
+/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/res/values/strings_gwm.xml:45:4: Failed to flatten XML for resource 'gwm_hud_area_note' with error: Invalid unicode escape sequence in string
+* What went wrong:
+> A failure occurred while executing com.android.build.gradle.internal.res.ResourceCompilerRunnable
+   > Resource compilation failed (Failed to compile values resource file /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/incremental/githubDebug/mergeGithubDebugResources/merged.dir/values/values.xml. Cause: java.lang.IllegalStateException: Can not extract resource from com.android.aaptcompiler.ParsedResource@2f0402f0.). Check logs for more details.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':app:mergeGithubDebugResources'.
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+Caused by: org.gradle.workers.internal.DefaultWorkerExecutor$WorkExecutionException: A failure occurred while executing com.android.build.gradle.internal.res.ResourceCompilerRunnable
+Caused by: com.android.aaptcompiler.ResourceCompilationException: Resource compilation failed (Failed to compile values resource file /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/incremental/githubDebug/mergeGithubDebugResources/merged.dir/values/values.xml. Cause: java.lang.IllegalStateException: Can not extract resource from com.android.aaptcompiler.ParsedResource@2f0402f0.). 
+Caused by: com.android.aaptcompiler.ResourceCompilationException: Failed to compile values resource file /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/incremental/githubDebug/mergeGithubDebugResources/merged.dir/values/values.xml
+Caused by: java.lang.IllegalStateException: Can not extract resource from com.android.aaptcompiler.ParsedResource@2f0402f0.
+BUILD FAILED in 7s
