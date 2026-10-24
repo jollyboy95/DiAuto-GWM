@@ -15,7 +15,6 @@ import com.andrerinas.openheadunit.R
 import com.andrerinas.openheadunit.hud.BydGuidance
 import com.andrerinas.openheadunit.hud.ClusterTurnCardView
 import java.text.NumberFormat
-import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 import kotlin.math.roundToInt
@@ -313,15 +312,18 @@ internal object GwmFormat {
     fun road(context: Context, next: BydGuidance): String =
         if (next.roundaboutExit in 1..9) context.getString(R.string.turn_card_exit, next.roundaboutExit) else next.road
 
-    /** Arrival time, as now plus the phone's reported time to arrival; null when not reported. */
-    fun arrival(next: BydGuidance, nowMillis: Long = System.currentTimeMillis()): String? =
+    /**
+     * Arrival time, as now plus the phone's reported time to arrival; null when not reported.
+     * Follows the head unit's 12/24-hour clock setting, like the car's own clock.
+     */
+    fun arrival(context: Context, next: BydGuidance, nowMillis: Long = System.currentTimeMillis()): String? =
         next.remainingSeconds.takeIf { it > 0 }?.let {
-            SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date(nowMillis + it * 1000L))
+            android.text.format.DateFormat.getTimeFormat(context).format(Date(nowMillis + it * 1000L))
         }
 
     fun tripParts(context: Context, next: BydGuidance): List<String> {
         val parts = mutableListOf<String>()
-        arrival(next)?.let { parts += context.getString(R.string.turn_card_info_arrival, it) }
+        arrival(context, next)?.let { parts += context.getString(R.string.turn_card_info_arrival, it) }
         if (next.remainingSeconds > 0) {
             val hours = next.remainingSeconds / 3600
             val minutes = (next.remainingSeconds % 3600) / 60

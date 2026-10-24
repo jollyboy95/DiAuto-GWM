@@ -59,7 +59,7 @@ internal class GwmHeadUpView(context: Context) : View(context) {
         val h = height.toFloat()
         if (w <= 0f || h <= 0f) return
         val distance = GwmFormat.distance(context, next.distanceMeters)
-        val eta = GwmFormat.arrival(next)
+        val eta = GwmFormat.arrival(context, next)
         // A small, squarish arrow area gets the stacked layout.
         if (w < h * 2.2f) drawStacked(canvas, next, distance, eta, w, h) else drawRow(canvas, next, distance, eta, w, h)
     }
