@@ -1,0 +1,45 @@
+{
+  "buildFiles": [
+    "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/local/lib/android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/local/lib/android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "usbhelper::@6890427a1f51a3e7e1df": {
+      "artifactName": "usbhelper",
+      "abi": "arm64-v8a",
+      "output": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/libusbhelper.so",
+      "runtimeFiles": [
+        "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/jniLibs/arm64-v8a/libusb1.0.so"
+      ]
+    },
+    "local_hotspot_radio::@6890427a1f51a3e7e1df": {
+      "artifactName": "local_hotspot_radio",
+      "abi": "arm64-v8a",
+      "output": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/liblocal_hotspot_radio.so",
+      "runtimeFiles": []
+    },
+    "hur_soft_hevc::@6890427a1f51a3e7e1df": {
+      "artifactName": "hur_soft_hevc",
+      "abi": "arm64-v8a",
+      "output": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/libhur_soft_hevc.so",
+      "runtimeFiles": [
+        "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/jniLibs/arm64-v8a/libavcodec.so",
+        "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/jniLibs/arm64-v8a/libavutil.so",
+        "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/jniLibs/arm64-v8a/libswscale.so"
+      ]
+    }
+  }
+}

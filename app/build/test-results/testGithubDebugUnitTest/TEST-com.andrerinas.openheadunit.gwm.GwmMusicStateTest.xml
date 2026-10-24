@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.gwm.GwmMusicStateTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T02:31:30.973Z" hostname="runnervm8k3b6" time="0.0">
+  <properties/>
+  <testcase name="a blank title is no track" classname="com.andrerinas.openheadunit.gwm.GwmMusicStateTest" time="0.0"/>
+  <testcase name="paused progress does not move and an unknown position stays unknown" classname="com.andrerinas.openheadunit.gwm.GwmMusicStateTest" time="0.0"/>
+  <testcase name="progress advances while playing and stops at the duration" classname="com.andrerinas.openheadunit.gwm.GwmMusicStateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

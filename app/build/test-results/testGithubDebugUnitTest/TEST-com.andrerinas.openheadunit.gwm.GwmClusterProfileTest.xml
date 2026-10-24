@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.gwm.GwmClusterProfileTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T02:31:30.967Z" hostname="runnervm8k3b6" time="0.005">
+  <properties/>
+  <testcase name="the crop shows exactly the drawn content" classname="com.andrerinas.openheadunit.gwm.GwmClusterProfileTest" time="0.004"/>
+  <testcase name="the safe area keeps the marker between the nav card and the instrument strip" classname="com.andrerinas.openheadunit.gwm.GwmClusterProfileTest" time="0.001"/>
+  <testcase name="marker steps move the safe area without shrinking it" classname="com.andrerinas.openheadunit.gwm.GwmClusterProfileTest" time="0.0"/>
+  <testcase name="a panel taller than 16 to 9 is letterboxed at the sides" classname="com.andrerinas.openheadunit.gwm.GwmClusterProfileTest" time="0.0"/>
+  <testcase name="an 8 to 3 cluster is drawn full width inside the 1080p frame" classname="com.andrerinas.openheadunit.gwm.GwmClusterProfileTest" time="0.0"/>
+  <testcase name="an unknown display falls back to the H7 panel shape" classname="com.andrerinas.openheadunit.gwm.GwmClusterProfileTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

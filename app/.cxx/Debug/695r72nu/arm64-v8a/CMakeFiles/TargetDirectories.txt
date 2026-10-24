@@ -1,0 +1,5 @@
+/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a/CMakeFiles/usbhelper.dir
+/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a/CMakeFiles/hur_soft_hevc.dir
+/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a/CMakeFiles/local_hotspot_radio.dir
+/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a/CMakeFiles/rebuild_cache.dir

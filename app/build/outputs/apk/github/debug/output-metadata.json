@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.andrerinas.headunitrevived.gwmh7",
+  "variantName": "githubDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 112,
+      "versionName": "0.3.12-gwm.r2",
+      "outputFile": "com.andrerinas.headunitrevived.gwmh7_0.3.12-gwm.r2_debug.apk"
+    }
+  ],
+  "elementType": "File",
+  "minSdkVersionForDexing": 16
+}

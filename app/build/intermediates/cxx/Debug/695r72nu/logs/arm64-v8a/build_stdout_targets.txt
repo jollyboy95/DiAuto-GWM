@@ -1,0 +1,7 @@
+ninja: Entering directory `/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a'
+[1/6] Building C object CMakeFiles/local_hotspot_radio.dir/local_hotspot_radio.c.o
+[2/6] Building C object CMakeFiles/usbhelper.dir/usbhelper.c.o
+[3/6] Linking C shared library /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/libusbhelper.so
+[4/6] Linking C shared library /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/liblocal_hotspot_radio.so
+[5/6] Building CXX object CMakeFiles/hur_soft_hevc.dir/ffmpeg_hevc_decoder.cpp.o
+[6/6] Linking CXX shared library /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/libhur_soft_hevc.so

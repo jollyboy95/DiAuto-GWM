@@ -1,0 +1,7 @@
+# ninja log v5
+2	931	1792809108603801128	CMakeFiles/local_hotspot_radio.dir/local_hotspot_radio.c.o	5261e77581a26cfe
+0	931	1792809108602447487	CMakeFiles/usbhelper.dir/usbhelper.c.o	684efd1db58310ed
+931	947	1792809108619447673	/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/libusbhelper.so	39e25e18ebf004fd
+931	947	1792809108619447673	/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/liblocal_hotspot_radio.so	29b829abef75f204
+1	2262	1792809109931461963	CMakeFiles/hur_soft_hevc.dir/ffmpeg_hevc_decoder.cpp.o	903349b4322393f
+2263	2412	1792809110049463248	/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/build/intermediates/cxx/Debug/695r72nu/obj/arm64-v8a/libhur_soft_hevc.so	16a2e9abcdbca816

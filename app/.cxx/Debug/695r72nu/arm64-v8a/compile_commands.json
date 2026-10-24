@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a",
+  "command": "/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dusbhelper_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -o CMakeFiles/usbhelper.dir/usbhelper.c.o -c /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/usbhelper.c",
+  "file": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/usbhelper.c"
+},
+{
+  "directory": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a",
+  "command": "/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHUR_HAVE_FFMPEG=1 -Dhur_soft_hevc_EXPORTS -I/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/ffmpeg/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -Wall -Wextra -Werror -o CMakeFiles/hur_soft_hevc.dir/ffmpeg_hevc_decoder.cpp.o -c /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/ffmpeg_hevc_decoder.cpp",
+  "file": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/ffmpeg_hevc_decoder.cpp"
+},
+{
+  "directory": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/.cxx/Debug/695r72nu/arm64-v8a",
+  "command": "/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android21 --sysroot=/usr/local/lib/android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dlocal_hotspot_radio_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -Wall -Wextra -Werror -o CMakeFiles/local_hotspot_radio.dir/local_hotspot_radio.c.o -c /home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/local_hotspot_radio.c",
+  "file": "/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/cpp/local_hotspot_radio.c"
+}
+]
