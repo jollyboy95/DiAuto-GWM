@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.200Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="an untried device is still asked, so the flag costs nothing until it is earned" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.001"/>
+  <testcase name="the helper's head-unit-hotspot strategy is the same route by another name" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="the helper's other strategies and the server mode are left alone" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="the transport only speaks for native mode" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="this policy and usesWifiDirect never both claim the same disconnect" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="an access point the app was never given charge of is left up, not switched off" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="the flag does not make this policy claim a disconnect that was never its own" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="a device that could not switch its access point back on is not asked to again" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="WiFi Direct routes are never this policy's to answer" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <testcase name="native AA on this unit's own access point takes it down when the app may drive it" classname="com.andrerinas.openheadunit.aap.UserExitHotspotPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.075Z" hostname="runnervm8k3b6" time="0.007">
+  <properties/>
+  <testcase name="the cycle is earned the moment the window elapses, not before" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.001"/>
+  <testcase name="the last cycle goes out on the first check after the wire settles" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the first cycle of a session is not held back by an unset cooldown stamp" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the quiet window outlasts a fault interval without outlasting the ceiling" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="a second cycle waits out the cooldown even with budget left" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.001"/>
+  <testcase name="a wire that never settles still reaches the lever" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="a repaired picture never escalates" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the surface escalation always gets to the lever first" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="a hold that lasts for minutes stays a bounded number of log lines" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the cooldown keeps two focus cycles from ever being in flight together" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the quiet window clears two throttle windows" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="a spent budget degrades to the nudge" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the escalation window clears two throttle windows" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="an isolated dropped frame still cycles at exactly the same instant it always has" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the last cycle is held on a wire that the earlier ones would have been spent on" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="a session that has never seen wire corruption never defers" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.001"/>
+  <testcase name="a spent budget and a running cooldown answer before the quiet check does" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the drop that starts the clock only gets the nudge" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the escalation window stays well under the fastest unaided repair ever measured" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.002"/>
+  <testcase name="the deferral ceiling is never cheaper to abandon than to keep" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the cycle goes out on the first check after the wire settles" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.001"/>
+  <testcase name="a refused claim is re-checked only after the winning cycle has had its chance" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="the deferral ceiling does not apply to the last cycle" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="every cycle up to the cap is available" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <testcase name="a wire that is still losing frames holds the cycle instead of spending it" classname="com.andrerinas.openheadunit.aap.KeyframeCycleEscalationPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

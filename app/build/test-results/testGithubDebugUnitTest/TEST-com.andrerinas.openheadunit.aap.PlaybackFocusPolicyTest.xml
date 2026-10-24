@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.148Z" hostname="runnervm8k3b6" time="0.007">
+  <properties/>
+  <testcase name="a disabled audio sink never takes permanent focus" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.001"/>
+  <testcase name="a negative elapsed time does not count" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="auto declines while a bluetooth media link is up" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="auto is the stored default so an unset preference behaves like 3 point 1 point 1 plus detection" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="always keeps taking focus whatever the detection says" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="the two paths are exact complements and never both take focus" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="auto declines once the latch has tripped, even with no bluetooth link detected" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="never declines even when the detection is clean" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="a media channel stopping inside the window counts" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="auto takes permanent focus when no bluetooth media link is up" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="auto takes focus when no bluetooth media link is up" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="speech and system chimes never count, however short" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="modes round-trip through their stored value and unknown values fall back to auto" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="auto declines the permanent grab while a bluetooth media link is up" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="always and never override the probe on the permanent path too" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="a disabled audio sink never takes focus" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="non-audio channels never take focus" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="static focus mode never uses the dynamic path" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="a media channel stopping outside the window does not count" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <testcase name="the permanent grab belongs to static mode alone" classname="com.andrerinas.openheadunit.aap.PlaybackFocusPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.243Z" hostname="runnervm8k3b6" time="0.012">
+  <properties/>
+  <testcase name="a phone that never asks for credentials fails, and is recorded as silent" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.004"/>
+  <testcase name="the settle timeout resumes the poke and leaves the listeners alone" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a phone reporting it could not join fails fast and lets the poke resume" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="credentials arriving mid-version-exchange do not jump the queue" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="with the version exchange off the wire behaviour is the one that shipped" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="extensions stop at the cap so a phone that never arrives cannot hold us forever" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="credentials that never arrive fail the handshake" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="the projection session landing completes the handshake" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="every message the phone sends is counted, whatever it was" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.001"/>
+  <testcase name="a phone that asks for credentials twice gets them twice" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="an early type 2 during the credentials wait is latched too" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a phone that answered something is not recorded as silent" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a failed start response is treated the same way while settling" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.001"/>
+  <testcase name="credentials held across the version timeout are sent when it expires" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a phone that asks for credentials early is answered as soon as they exist" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a ping is echoed in every live stage and never changes the stage" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.004"/>
+  <testcase name="message types we do not model are ignored rather than fatal" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a phone that ignores type 4 does not fail the handshake, it just carries on" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="with the version exchange on, type 4 goes out before anything else" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a start response we could not parse is never read as a failure" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a successful start response is informational in both stages it can arrive in" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a finished session ignores everything, repeatedly" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a failed session cannot be revived by a late success" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="an inbound ping response is a keepalive and is ignored" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="each stage carries the deadline the caller should hold it to" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <testcase name="a phone still joining buys itself more time" classname="com.andrerinas.openheadunit.aap.WppHandshakeSessionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

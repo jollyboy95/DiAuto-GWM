@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.514Z" hostname="runnervm8k3b6" time="0.009">
+  <properties/>
+  <testcase name="crop shows only the drawn content" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.004"/>
+  <testcase name="a map on another theme's layer hides, so Scenario is never covered" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="detail sets the density" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="the turn card stays inside the window it belongs to" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.001"/>
+  <testcase name="large size uses a 720p frame for a 1280x480 picture" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="measured DiLink 5_1 windows are the ones DiPlay measured" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="marker steps move the safe area without resizing it" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="unknown stored values fall back to defaults" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="marker steps are clamped and never leave the panel" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.004"/>
+  <testcase name="a wide safe area still moves with the marker and stays on the panel" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="crop of the large stream on a 1280x480 panel" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="default safe area matches the small navi window" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="wider layouts widen the safe area around the same centre" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="normal size draws the 8 to 3 panel inside a 1080p frame" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <testcase name="one safe area for every theme, and the map slides into each window" classname="com.andrerinas.openheadunit.hud.ClusterMapConfigTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

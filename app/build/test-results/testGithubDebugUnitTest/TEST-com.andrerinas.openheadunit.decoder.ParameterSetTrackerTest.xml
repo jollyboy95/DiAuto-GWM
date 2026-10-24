@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.360Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="several kinds changing in one access unit are one report" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.001"/>
+  <testcase name="reset forgets everything" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.0"/>
+  <testcase name="changes are counted across the session" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.0"/>
+  <testcase name="a nonsense slice is ignored rather than stored" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.0"/>
+  <testcase name="the first of a kind is not a change" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.001"/>
+  <testcase name="different bytes are a change, reported once" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.0"/>
+  <testcase name="the same bytes again are not a change" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.0"/>
+  <testcase name="a length change is a change" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.0"/>
+  <testcase name="it reads only the slice it was given" classname="com.andrerinas.openheadunit.decoder.ParameterSetTrackerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.130Z" hostname="runnervm8k3b6" time="0.007">
+  <properties/>
+  <testcase name="settles for the whole window after credentials go out" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.001"/>
+  <testcase name="the handshake limit leaves room for a phone that needs a few attempts" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="a clock that went backwards does not count as settling" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="no handshake is in flight before one starts" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="no warning before the phone has ignored enough pokes" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="the warning repeats so it survives into a log exported much later" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.001"/>
+  <testcase name="the settle cap leaves room for extensions but is not open-ended" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="poke is blocked during a handshake and once a session is up" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="no handoff is settling before any credentials go out" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="poke is blocked while a handoff is settling" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="a unit that has connected before is never warned" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="handshakes are served until too many have timed out in a row" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="handshakes stop being served once the limit is reached" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="discovery does not restart unless a client actually left" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="warns once the phone has answered enough pokes without ever connecting back" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="discovery never restarts on the native quiet-host path" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="handshake counts as in flight for the whole exchange window" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="a clock that went backwards does not count as handshaking" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="settling expires so a missed reset cannot latch it true forever" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="handshake expires so a coroutine that never unwinds cannot latch it true" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="the handshake window outlasts the longest legitimate exchange" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="discovery restarts when a client leaves a non-native group" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <testcase name="poke runs only when nothing else is using the radio" classname="com.andrerinas.openheadunit.aap.NativeHandoffPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

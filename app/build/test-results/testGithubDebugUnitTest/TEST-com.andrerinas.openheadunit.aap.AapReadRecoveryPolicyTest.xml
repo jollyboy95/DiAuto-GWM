@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:30.909Z" hostname="runnervm8k3b6" time="0.029">
+  <properties/>
+  <testcase name="a header that never arrived took no bytes, so only the socket gives up" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.005"/>
+  <testcase name="end of stream is an ordinary disconnect at every site" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.0"/>
+  <testcase name="a complete read of any field continues" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.0"/>
+  <testcase name="a declared length inside the buffer continues, including an empty body" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.0"/>
+  <testcase name="a body that timed out reports zero but consumed an unknown amount" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.0"/>
+  <testcase name="a short fragment total is fatal even though the field is four bytes" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.0"/>
+  <testcase name="no site answers CONTINUE once bytes have gone missing" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.021"/>
+  <testcase name="a declared length outside the buffer is a desync, not a big message" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.0"/>
+  <testcase name="a partial header cannot be resumed" classname="com.andrerinas.openheadunit.aap.AapReadRecoveryPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

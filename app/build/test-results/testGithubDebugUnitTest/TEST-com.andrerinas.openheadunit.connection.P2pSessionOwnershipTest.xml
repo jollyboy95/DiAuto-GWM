@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.connection.P2pSessionOwnershipTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.310Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="replacement group cannot be removed by old session" classname="com.andrerinas.openheadunit.connection.P2pSessionOwnershipTest" time="0.001"/>
+  <testcase name="system owner broadcast cannot adopt CarPlay group" classname="com.andrerinas.openheadunit.connection.P2pSessionOwnershipTest" time="0.0"/>
+  <testcase name="legacy group requires successful current create before adoption" classname="com.andrerinas.openheadunit.connection.P2pSessionOwnershipTest" time="0.0"/>
+  <testcase name="disabled P2P cancels pending retries until reenabled" classname="com.andrerinas.openheadunit.connection.P2pSessionOwnershipTest" time="0.0"/>
+  <testcase name="exit cannot be undone by late callback or enable broadcast" classname="com.andrerinas.openheadunit.connection.P2pSessionOwnershipTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

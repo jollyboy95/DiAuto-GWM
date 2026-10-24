@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.WppFramingTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.237Z" hostname="runnervm8k3b6" time="0.004">
+  <properties/>
+  <testcase name="a negative payload size is refused" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.001"/>
+  <testcase name="decoding ignores whatever follows the header" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.0"/>
+  <testcase name="the frame is the header followed by the payload unchanged" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.002"/>
+  <testcase name="a payload too large for the length field is refused, not truncated" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.0"/>
+  <testcase name="types round-trip through the header, including ones above one byte" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.0"/>
+  <testcase name="header bytes are pinned, big-endian, for a hand-worked example" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.0"/>
+  <testcase name="sizes round-trip through the header, including the ones that use the high byte" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.0"/>
+  <testcase name="decoding refuses a short header rather than reading past it" classname="com.andrerinas.openheadunit.aap.WppFramingTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

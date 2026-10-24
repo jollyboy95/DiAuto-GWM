@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.connection.LegacyHotspotRadioTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.275Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="channelChangesAndMissingReadsRestartSettling" classname="com.andrerinas.openheadunit.connection.LegacyHotspotRadioTest" time="0.001"/>
+  <testcase name="decodesDriverFrequencyWithoutUsingStationChannel" classname="com.andrerinas.openheadunit.connection.LegacyHotspotRadioTest" time="0.0"/>
+  <testcase name="channelOnlyNeedsAnExplicitMatchingBand" classname="com.andrerinas.openheadunit.connection.LegacyHotspotRadioTest" time="0.0"/>
+  <testcase name="rejectsAutomaticMalformedAndOverflowValues" classname="com.andrerinas.openheadunit.connection.LegacyHotspotRadioTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

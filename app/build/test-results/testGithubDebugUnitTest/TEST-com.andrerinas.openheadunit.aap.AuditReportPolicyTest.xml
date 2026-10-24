@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.AuditReportPolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:30.951Z" hostname="runnervm8k3b6" time="0.003">
+  <properties/>
+  <testcase name="a fault that starts in minute nine is still reported" classname="com.andrerinas.openheadunit.aap.AuditReportPolicyTest" time="0.001"/>
+  <testcase name="the interval is not so long that a report is lost in the noise of a drive" classname="com.andrerinas.openheadunit.aap.AuditReportPolicyTest" time="0.0"/>
+  <testcase name="the first reports print immediately, however fast they arrive" classname="com.andrerinas.openheadunit.aap.AuditReportPolicyTest" time="0.001"/>
+  <testcase name="the budget refills instead of running out" classname="com.andrerinas.openheadunit.aap.AuditReportPolicyTest" time="0.0"/>
+  <testcase name="a storm is bounded to roughly one line per interval" classname="com.andrerinas.openheadunit.aap.AuditReportPolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

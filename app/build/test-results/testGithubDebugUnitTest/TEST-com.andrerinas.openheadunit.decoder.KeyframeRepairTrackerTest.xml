@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.350Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="output the codec already had queued does not confirm anything" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <testcase name="a decoder whose output timestamps say nothing still reports a repair" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <testcase name="reset drops a pending keyframe and the decoded flag" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.001"/>
+  <testcase name="a newer keyframe replaces an older pending one" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <testcase name="a run of stale frames does not carry over to the next keyframe" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <testcase name="the bound is far past any real reorder depth and far short of the starvation patience" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <testcase name="a frame at or past the keyframe confirms it, once" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <testcase name="feeding a keyframe is not a repair" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <testcase name="renders with nothing pending are not repairs" classname="com.andrerinas.openheadunit.decoder.KeyframeRepairTrackerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

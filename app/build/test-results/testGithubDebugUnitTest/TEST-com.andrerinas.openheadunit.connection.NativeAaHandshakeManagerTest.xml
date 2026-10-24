@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.284Z" hostname="runnervm8k3b6" time="0.006">
+  <properties/>
+  <testcase name="no services reported at all yields no secondaries" classname="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" time="0.002"/>
+  <testcase name="empty primary setting falls back to bluetooth_manager as primary" classname="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" time="0.0"/>
+  <testcase name="default primary plus one extra radio flags the extra as secondary" classname="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" time="0.0"/>
+  <testcase name="user-selected non-default primary makes the other radio the secondary" classname="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" time="0.0"/>
+  <testcase name="duplicate service names in the input collapse to one secondary entry" classname="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" time="0.0"/>
+  <testcase name="single-radio device has no secondaries" classname="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" time="0.0"/>
+  <testcase name="three radios with one selected as primary leaves the other two as secondaries" classname="com.andrerinas.openheadunit.connection.NativeAaHandshakeManagerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

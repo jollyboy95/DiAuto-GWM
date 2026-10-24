@@ -1,0 +1,726 @@
+[
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_setting_action_button.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_setting_action_button.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_u_turn_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_u_turn_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_item_auto_connect.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/item_auto_connect.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_stop.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_stop.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_wifi.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_wifi.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_arrow_up.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_arrow_up.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_unused_ani_record.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/unused_ani_record.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_quick_settings.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_quick_settings.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_gradient_blue.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/gradient_blue.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg_setting_top.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg_setting_top.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_home.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_activity_headunit.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/activity_headunit.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_usb.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_usb.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_add_button.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_add_button.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_activity_main.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_safety_disclaimer.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_safety_disclaimer.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_bluetooth_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_bluetooth_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_turn_sharp_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_turn_sharp_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg_setting_bottom.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg_setting_bottom.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_ani_button.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/ani_button.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_play_arrow_black_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_play_arrow_black_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_view_dpi_picker.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/view_dpi_picker.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-v21_selectable_borderless.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-v21/selectable_borderless.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_roundabout_left.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_roundabout_left.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_menu_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_menu_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/xml_usb_device_filter.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/xml/usb_device_filter.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/xml_locales_config.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/xml/locales_config.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/raw_cert.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/raw/cert"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_turn_sharp_left.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_turn_sharp_left.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_usb_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_usb_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_slide_out_left.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_settings.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/color_segmented_button_stroke_selector.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/color/segmented_button_stroke_selector.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xxxhdpi_ic_launcher_playstore.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xxxhdpi/ic_launcher_playstore.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_keymap.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_keymap.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_search.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_selectable_borderless.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/selectable_borderless.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_da_permissions.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_da_permissions.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_list_item_nearby.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/list_item_nearby.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_roundabout_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_roundabout_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_save_button.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_save_button.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_skip_next_black_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_skip_next_black_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_splash_background.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/splash_background.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_setting_info_banner.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_setting_info_banner.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_sports_score.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_sports_score.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_onboarding_permission_item.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_onboarding_permission_item.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_add_network_address.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_add_network_address.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_settings_quick.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_settings_quick.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_audio_offsets.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_audio_offsets.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_slide_in_left.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_permissions.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_permissions.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_u_turn_left.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_u_turn_left.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_btn_primary_teal.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/btn_primary_teal.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_map_picker.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_map_picker.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/xml_shortcuts.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/xml/shortcuts.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_gradient_monochrome.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/gradient_monochrome.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_category_header.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_category_header.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_arrow_back_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_arrow_back_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_exit_to_app_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_exit_to_app_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_loading_screen.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_loading_screen.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_turn_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_turn_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_mic.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_mic.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_android_auto.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_android_auto.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_ani_preset.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/ani_preset.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_skip_previous_black_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_skip_previous_black_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_activity_settings.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_nearby_selection.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_nearby_selection.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_check.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_settings_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_settings_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_about.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_about.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_turn_slight_left.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_turn_slight_left.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_gradient_darkblue.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/gradient_darkblue.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_da_launcher.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/da_launcher.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_da_card.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/da_card.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_gradient_orange.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/gradient_orange.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_chevron_left_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_chevron_left_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg_gradient.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg_gradient.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_custom_insets.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_custom_insets.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_custom_margin_dialog.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_custom_margin_dialog.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_launch_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_launch_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-anydpi-v24_ic_stat_aa.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-anydpi-v24/ic_stat_aa.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/xml_provider_paths.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_mic_settings.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_mic_settings.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_dpi_settings.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_dpi_settings.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_directions_car.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_directions_car.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg_setting_single.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg_setting_single.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_slide_out_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xxhdpi_ic_stat_aa.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xxhdpi/ic_stat_aa.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_launch_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_launch_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_dark_mode.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_dark_mode.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_warning_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_warning_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg_pill_translucent.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg_pill_translucent.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_turn_slight_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_turn_slight_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_list_item_device.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/list_item_device.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/color_btn_save_text.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/color/btn_save_text.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_keyboard.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_keyboard.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_activity_onboarding.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/color_btn_save_background.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/color/btn_save_background.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_da_automation.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_da_automation.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_network_wifi_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_network_wifi_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_auto_connect.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_auto_connect.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_arrow_down.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_arrow_down.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_turn_left.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_turn_left.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_home.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_item_keymap.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/item_keymap.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_list.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_list.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_support.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_support.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/xml_accessory_filter.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/xml/accessory_filter.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_diagnostics.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_diagnostics.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_da_display.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_da_display.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_drag_handle.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_drag_handle.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_illus_car_dashboard.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/illus_car_dashboard.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_stat_aa.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_stat_aa.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_refresh_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_refresh_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_apps.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_apps.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_button_selectable_background.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/button_selectable_background.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-hdpi_ic_stat_aa.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-hdpi/ic_stat_aa.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_settings_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_settings_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_network_wifi_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_network_wifi_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_screentest.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/screentest.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-mdpi_ic_stat_aa.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-mdpi/ic_stat_aa.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_item_vehicle_chip.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/item_vehicle_chip.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_unused_ani_record_time.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/unused_ani_record_time.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg_setting_middle.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg_setting_middle.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_pip.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_pip.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_reset_button.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_reset_button.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_image.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_image.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_drive_settings.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_drive_settings.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_auto_start.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_auto_start.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_turn_card_straight.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_turn_card_straight.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_usb_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_usb_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_rename_notice.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_rename_notice.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_share_hotspot_qr.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_share_hotspot_qr.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_reporting_rules.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_reporting_rules.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_setting_item_toggle.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_setting_item_toggle.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_da_launcher_foreground.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/da_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_loading_screen.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_loading_screen.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-xhdpi_ic_chevron_left_white_24dp.png.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-xhdpi/ic_chevron_left_white_24dp.png"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_gradient_purple.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/gradient_purple.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable-night_bg_gradient.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable-night/bg_gradient.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/menu_menu_settings_save.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/menu/menu_settings_save.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_dialog_exit_item.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/dialog_exit_item.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_setting_item_segmented.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_setting_item_segmented.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_phone.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_phone.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_translate.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_translate.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_scan_button.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_scan_button.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_da_about.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_da_about.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_close_white.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_close_white.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/raw_husam_h264.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/raw/husam_h264"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_locations.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_locations.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_bg_info_banner.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/bg_info_banner.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_ani_preset_layout.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/ani_preset_layout.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout-port_fragment_home.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout-port/fragment_home.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_setting_item.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_setting_item.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/anim_slide_in_right.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/drawable_ic_da_diagnostics.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/drawable/ic_da_diagnostics.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_fragment_vehicle_info.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/fragment_vehicle_info.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/layout_layout_setting_item_slider.xml.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/layout/layout_setting_item_slider.xml"
+    },
+    {
+        "merged": "com.andrerinas.openheadunit.app-githubDebug-48:/raw_privkey.flat",
+        "source": "com.andrerinas.openheadunit.app-main-52:/raw/privkey"
+    }
+]

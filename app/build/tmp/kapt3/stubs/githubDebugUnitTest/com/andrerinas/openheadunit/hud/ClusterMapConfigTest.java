@@ -1,0 +1,13 @@
+package com.andrerinas.openheadunit.hud;
+
+@kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010\u0003\u001a\u00020\u0004H\u0007J\b\u0010\u0005\u001a\u00020\u0004H\u0007J\b\u0010\u0006\u001a\u00020\u0004H\u0007J\b\u0010\u0007\u001a\u00020\u0004H\u0007J\b\u0010\b\u001a\u00020\u0004H\u0007J\b\u0010\t\u001a\u00020\u0004H\u0007J\b\u0010\n\u001a\u00020\u0004H\u0007J\b\u0010\u000b\u001a\u00020\u0004H\u0007J\b\u0010\f\u001a\u00020\u0004H\u0007J\b\u0010\r\u001a\u00020\u0004H\u0007J\b\u0010\u000e\u001a\u00020\u0004H\u0007J\b\u0010\u000f\u001a\u00020\u0004H\u0007J0\u0010\u0010\u001a\u00020\u00112\b\b\u0002\u0010\u0012\u001a\u00020\u00132\b\b\u0002\u0010\u0014\u001a\u00020\u00152\b\b\u0002\u0010\u0016\u001a\u00020\u00172\b\b\u0002\u0010\u0018\u001a\u00020\u0017H\u0002J\b\u0010\u0019\u001a\u00020\u0004H\u0007J\b\u0010\u001a\u001a\u00020\u0004H\u0007J\b\u0010\u001b\u001a\u00020\u0004H\u0007\u00a8\u0006\u001c"}, d2 = {"Lcom/andrerinas/openheadunit/hud/ClusterMapConfigTest;", "", "()V", "a map on another theme\'s layer hides, so Scenario is never covered", "", "a wide safe area still moves with the marker and stays on the panel", "crop of the large stream on a 1280x480 panel", "crop shows only the drawn content", "default safe area matches the small navi window", "detail sets the density", "large size uses a 720p frame for a 1280x480 picture", "marker steps are clamped and never leave the panel", "marker steps move the safe area without resizing it", "measured DiLink 5_1 windows are the ones DiPlay measured", "normal size draws the 8 to 3 panel inside a 1080p frame", "one safe area for every theme, and the map slides into each window", "profile", "Lcom/andrerinas/openheadunit/hud/ClusterMapConfig$Profile;", "size", "Lcom/andrerinas/openheadunit/hud/ClusterMapConfig$Size;", "detail", "Lcom/andrerinas/openheadunit/hud/ClusterMapConfig$Detail;", "x", "", "y", "the turn card stays inside the window it belongs to", "unknown stored values fall back to defaults", "wider layouts widen the safe area around the same centre", "com.andrerinas.headunitrevived_0.3.12_githubDebugUnitTest"})
+public final class ClusterMapConfigTest {
+    
+    public ClusterMapConfigTest() {
+        super();
+    }
+    
+    private final com.andrerinas.openheadunit.hud.ClusterMapConfig.Profile profile(com.andrerinas.openheadunit.hud.ClusterMapConfig.Size size, com.andrerinas.openheadunit.hud.ClusterMapConfig.Detail detail, int x, int y) {
+        return null;
+    }
+}

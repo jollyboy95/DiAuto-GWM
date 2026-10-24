@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.345Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="the 1GB head unit this exists for is constrained" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <testcase name="a modern tablet is ample and its buffers are left alone" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <testcase name="a small heap ceiling is constraining whatever the total RAM says" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <testcase name="the reading carries every input it decided from" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <testcase name="the boundaries fall on the documented side" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <testcase name="a mid-range unit is normal, which is today's behaviour" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.001"/>
+  <testcase name="an unreadable number is unknown rather than constraining" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <testcase name="ample needs both numbers, not one" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <testcase name="the low-RAM flag is believed when it is set" classname="com.andrerinas.openheadunit.decoder.DeviceMemoryProfileTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.203Z" hostname="runnervm8k3b6" time="0.005">
+  <properties/>
+  <testcase name="each mode belongs to exactly one stage, and only one site applies it" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.002"/>
+  <testcase name="each mode attacks the flag it says it does" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="the rate counts only the flag being attacked" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.001"/>
+  <testcase name="the summary says how much of a budget is left" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="the default rate is rare enough to leave a fair sample of normal behaviour" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="a spent budget still counts candidates" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="the reader mode leaves every other flag alone" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="the reader mode attacks middle fragments, like the assembler-stage mode it mirrors" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.001"/>
+  <testcase name="the rate is clamped to something that can still produce a picture" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="every mode round-trips through the value stored in settings" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="off does nothing to anything" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="hiding the start code is not a drop" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="the candidate count follows the targeted flag and nothing else" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="the reader mode honours the rate and the budget like every other" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="no budget means the whole session, and a negative one is not a budget" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="only the reader mode runs in the reader" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.001"/>
+  <testcase name="a budget stops injection at exactly N faults" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="the summary carries the setting and both counts" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <testcase name="every Nth targeted message is faulted, and nothing else is touched" classname="com.andrerinas.openheadunit.aap.VideoFaultInjectorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

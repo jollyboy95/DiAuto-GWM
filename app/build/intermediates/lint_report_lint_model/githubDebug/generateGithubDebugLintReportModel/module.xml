@@ -1,0 +1,24 @@
+<lint-module
+    format="1"
+    dir="/home/runner/work/DiAuto-GWM/DiAuto-GWM/app"
+    name=":app"
+    type="APP"
+    maven="open-headunit:app:unspecified"
+    agpVersion="8.13.2"
+    buildFolder="build"
+    bootClassPath="/usr/local/lib/android/sdk/platforms/android-36/android.jar:/usr/local/lib/android/sdk/build-tools/35.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-36">
+  <lintOptions
+      disable="PackagedPrivateKey"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="PackagedPrivateKey"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="githubDebug"/>
+</lint-module>

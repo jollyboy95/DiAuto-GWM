@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.228Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="nothing is sent unless the transport is in its steady state" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.001"/>
+  <testcase name="the cycle is spent once per surface and degrades to the nudge" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="a phone that has left the link is a disconnect, not a stall" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="a cold start is left to the phone's own sink setup" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="the escalation window stays clear of the slowest unaided first frame" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="a warm relaunch with no picture gets the focus cycle" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="the nudge respects the shared keyframe throttle" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="a session with no link activity at all is never escalated" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="a phone that is silent on video but present on the link still gets the cycle" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="a picture on screen is never disturbed" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <testcase name="a fresh surface is given the healthy path's own worst case first" classname="com.andrerinas.openheadunit.aap.WarmRelaunchKeyframePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.MediaKeyRoutingPolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.112Z" hostname="runnervm8k3b6" time="0.003">
+  <properties/>
+  <testcase name="an unset or damaged preference means always" classname="com.andrerinas.openheadunit.aap.MediaKeyRoutingPolicyTest" time="0.001"/>
+  <testcase name="always forwards whatever bluetooth is doing" classname="com.andrerinas.openheadunit.aap.MediaKeyRoutingPolicyTest" time="0.001"/>
+  <testcase name="everything that is not a media button is always forwarded" classname="com.andrerinas.openheadunit.aap.MediaKeyRoutingPolicyTest" time="0.001"/>
+  <testcase name="auto forwards when the bluetooth state cannot be read" classname="com.andrerinas.openheadunit.aap.MediaKeyRoutingPolicyTest" time="0.0"/>
+  <testcase name="auto suppresses only while a bluetooth media link is up" classname="com.andrerinas.openheadunit.aap.MediaKeyRoutingPolicyTest" time="0.0"/>
+  <testcase name="never suppresses whatever bluetooth is doing" classname="com.andrerinas.openheadunit.aap.MediaKeyRoutingPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

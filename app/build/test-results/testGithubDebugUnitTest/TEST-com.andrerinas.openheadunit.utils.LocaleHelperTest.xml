@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.utils.LocaleHelperTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:36.370Z" hostname="runnervm8k3b6" time="2.311">
+  <properties/>
+  <testcase name="migrationDoesNotOverwriteAnAndroidSettingsChoice" classname="com.andrerinas.openheadunit.utils.LocaleHelperTest" time="1.491"/>
+  <testcase name="backupUsesThePlatformChoiceInsteadOfTheRemovedLegacyKey" classname="com.andrerinas.openheadunit.utils.LocaleHelperTest" time="0.025"/>
+  <testcase name="pickerUpdatesPlatformAndCanRestoreSystemDefault" classname="com.andrerinas.openheadunit.utils.LocaleHelperTest" time="0.012"/>
+  <testcase name="legacyChoiceMigratesOnceAndSystemChangesStayAuthoritative" classname="com.andrerinas.openheadunit.utils.LocaleHelperTest" time="0.017"/>
+  <testcase name="olderAndroidSwitchesResourcesAndRtlWithoutChangingTheProcessDefault" classname="com.andrerinas.openheadunit.utils.LocaleHelperTest" time="0.743"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Robolectric] WARN: Android SDK 36 requires Java 21 (have Java 17). Tests won't be run on SDK 36 unless explicitly requested.
+[Robolectric] WARN: Android SDK 37 requires Java 21 (have Java 17). Tests won't be run on SDK 37 unless explicitly requested.
+]]></system-err>
+</testsuite>

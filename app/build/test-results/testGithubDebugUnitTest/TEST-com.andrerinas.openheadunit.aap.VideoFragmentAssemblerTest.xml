@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.210Z" hostname="runnervm8k3b6" time="0.006">
+  <properties/>
+  <testcase name="back to back frames leave no state behind" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.001"/>
+  <testcase name="a two-fragment frame assembles and decodes" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a complete frame decodes from the timestamp offset" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.002"/>
+  <testcase name="overflow marks the frame corrupt so the rest of it is skipped" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="reset returns the machine to its start state" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a first fragment during an open run reports the previous frame truncated" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="an unhandled flag is passed on without touching the run" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a complete frame decodes from the media offset when there is nothing at ten" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a last fragment with no run open is an orphan and closes nothing" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="the timestamp offset wins when both offsets look like a start code" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a first fragment with no start code is discarded, not assembled headless" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a complete frame with no start code is dropped without asking for a keyframe" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a complete frame during an open run reports the previous frame truncated" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.001"/>
+  <testcase name="a middle fragment with no run open is an orphan and is discarded" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a headless first fragment during an open run counts both anomalies" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a long frame appends every middle fragment" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="the followers of a headless first fragment never reach the decoder" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="a headless first fragment does not consume the message" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="every anomaly is counted and the counters reset independently of the state" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.001"/>
+  <testcase name="a middle fragment does not itself count as truncation" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <testcase name="the rest of a corrupt frame is discarded, and the next frame recovers" classname="com.andrerinas.openheadunit.aap.VideoFragmentAssemblerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

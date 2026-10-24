@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.main.RenameNoticePolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.537Z" hostname="runnervm8k3b6" time="0.0">
+  <properties/>
+  <testcase name="window cutoff is exclusive" classname="com.andrerinas.openheadunit.main.RenameNoticePolicyTest" time="0.0"/>
+  <testcase name="unknown or unset install time falls on the show side" classname="com.andrerinas.openheadunit.main.RenameNoticePolicyTest" time="0.0"/>
+  <testcase name="existing user installed before the release sees it" classname="com.andrerinas.openheadunit.main.RenameNoticePolicyTest" time="0.0"/>
+  <testcase name="new install within the window sees it" classname="com.andrerinas.openheadunit.main.RenameNoticePolicyTest" time="0.0"/>
+  <testcase name="new install after the window does not see it" classname="com.andrerinas.openheadunit.main.RenameNoticePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.067Z" hostname="runnervm8k3b6" time="0.005">
+  <properties/>
+  <testcase name="the very first press is never treated as a duplicate" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.001"/>
+  <testcase name="one press one click" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.001"/>
+  <testcase name="a dropped press drops its release too" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="two deliberate presses inside the old window both get through when they carry identity" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="a press whose release never arrives does not swallow the next press" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.001"/>
+  <testcase name="a release with no outstanding press is never sent" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="a genuine press and hold is not broken up" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="the same key event arriving twice is one click - activity first" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="a press with identity following one without falls back to the window" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="non-media keys use the shorter window" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="the same key event arriving twice is one click - broadcast first" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.001"/>
+  <testcase name="identity is ignored when it cannot be trusted" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <testcase name="a duplicate with no identity is still dropped by the window" classname="com.andrerinas.openheadunit.aap.KeyDebouncePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

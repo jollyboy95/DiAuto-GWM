@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.view.ProjectionRendererPolicyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:38.682Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="invalid imported preferences fall back instead of crashing" classname="com.andrerinas.openheadunit.view.ProjectionRendererPolicyTest" time="0.0"/>
+  <testcase name="unknown devices retain compatible texture default" classname="com.andrerinas.openheadunit.view.ProjectionRendererPolicyTest" time="0.0"/>
+  <testcase name="upgrades preserve every explicitly selected renderer" classname="com.andrerinas.openheadunit.view.ProjectionRendererPolicyTest" time="0.001"/>
+  <testcase name="verified DiLink uses direct surface output on first install" classname="com.andrerinas.openheadunit.view.ProjectionRendererPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

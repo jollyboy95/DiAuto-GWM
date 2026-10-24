@@ -1,0 +1,13 @@
+package com.andrerinas.openheadunit.aap;
+
+@kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\b\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\b\u0010\u0003\u001a\u00020\u0004H\u0007J\b\u0010\u0005\u001a\u00020\u0004H\u0007J\b\u0010\u0006\u001a\u00020\u0004H\u0007J\b\u0010\u0007\u001a\u00020\u0004H\u0007J8\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\u000b2\b\b\u0002\u0010\r\u001a\u00020\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010\u0011\u001a\u00020\u0010H\u0002J\b\u0010\u0012\u001a\u00020\u0004H\u0007J\b\u0010\u0013\u001a\u00020\u0004H\u0007J\b\u0010\u0014\u001a\u00020\u0004H\u0007J\b\u0010\u0015\u001a\u00020\u0004H\u0007J\b\u0010\u0016\u001a\u00020\u0004H\u0007J\b\u0010\u0017\u001a\u00020\u0004H\u0007\u00a8\u0006\u0018"}, d2 = {"Lcom/andrerinas/openheadunit/aap/UserExitHotspotPolicyTest;", "", "()V", "WiFi Direct routes are never this policy\'s to answer", "", "a device that could not switch its access point back on is not asked to again", "an access point the app was never given charge of is left up, not switched off", "an untried device is still asked, so the flag costs nothing until it is earned", "exit", "Lcom/andrerinas/openheadunit/aap/HotspotExitAction;", "mode", "", "strategy", "transport", "Lcom/andrerinas/openheadunit/aap/NativeTransport;", "autoEnableHotspot", "", "teardownProvenUnsafe", "native AA on this unit\'s own access point takes it down when the app may drive it", "the flag does not make this policy claim a disconnect that was never its own", "the helper\'s head-unit-hotspot strategy is the same route by another name", "the helper\'s other strategies and the server mode are left alone", "the transport only speaks for native mode", "this policy and usesWifiDirect never both claim the same disconnect", "com.andrerinas.headunitrevived_0.3.12_githubDebugUnitTest"})
+public final class UserExitHotspotPolicyTest {
+    
+    public UserExitHotspotPolicyTest() {
+        super();
+    }
+    
+    private final com.andrerinas.openheadunit.aap.HotspotExitAction exit(int mode, int strategy, com.andrerinas.openheadunit.aap.NativeTransport transport, boolean autoEnableHotspot, boolean teardownProvenUnsafe) {
+        return null;
+    }
+}

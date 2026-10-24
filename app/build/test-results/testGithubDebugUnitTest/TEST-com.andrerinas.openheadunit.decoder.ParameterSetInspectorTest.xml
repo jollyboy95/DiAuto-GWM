@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.352Z" hostname="runnervm8k3b6" time="0.007">
+  <properties/>
+  <testcase name="reads a baseline SPS with no VUI" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.002"/>
+  <testcase name="empty input is rejected" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.0"/>
+  <testcase name="a truncated HEVC SPS reads as no answer" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.001"/>
+  <testcase name="the H264 summary names every field a decision would rest on" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.0"/>
+  <testcase name="every truncation of an SPS reads as no answer rather than a wrong one" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.0"/>
+  <testcase name="the HEVC summary names every field a decision would rest on" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.001"/>
+  <testcase name="pic_order_cnt_type 1 does not desync the fields behind it" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.0"/>
+  <testcase name="reads a high profile SPS through the VUI to the bitstream restriction" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.0"/>
+  <testcase name="an absent restriction says absent rather than zero" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.001"/>
+  <testcase name="walks hrd_parameters without losing its place" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.0"/>
+  <testcase name="reads an HEVC SPS with sub-layers and a conformance window" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.0"/>
+  <testcase name="reads an HEVC SPS past its emulation-prevention bytes" classname="com.andrerinas.openheadunit.decoder.ParameterSetInspectorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

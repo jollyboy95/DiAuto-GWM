@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:30.980Z" hostname="runnervm8k3b6" time="0.036">
+  <properties/>
+  <testcase name="a picture found after the parameter sets settles the answer immediately" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.017"/>
+  <testcase name="parameter sets are found behind a delimiter or an SEI" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.001"/>
+  <testcase name="a real parameter-set unit finishes well inside the bound" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <testcase name="a unit too short to hold a NAL is not configuration" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.001"/>
+  <testcase name="a large frame is not walked past the byte bound" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.013"/>
+  <testcase name="an IDR with no parameter sets is still just a frame" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <testcase name="parameter sets on their own are configuration" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <testcase name="a keyframe leading with its parameter sets is not configuration" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <testcase name="bytes outside the offset and size are not read" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <testcase name="the answer is read against the pinned codec, because the same byte means two things" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.001"/>
+  <testcase name="the H264 SPS extensions count as parameter sets" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <testcase name="three-byte start codes are read too" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <testcase name="an ordinary frame carries no parameter sets" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.001"/>
+  <testcase name="stopping at the bound withholds the flag rather than guessing" classname="com.andrerinas.openheadunit.aap.CodecConfigScannerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

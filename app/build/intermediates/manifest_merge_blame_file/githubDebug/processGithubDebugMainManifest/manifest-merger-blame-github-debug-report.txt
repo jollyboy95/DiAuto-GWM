@@ -1,0 +1,890 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.andrerinas.headunitrevived.bydhudtest"
+4    android:versionCode="112"
+5    android:versionName="0.3.12-hud-test" >
+6
+7    <uses-sdk
+7-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:5:5-7:121
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.BYDAUTO_INSTRUMENT_COMMON" />
+11-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:2:5-84
+11-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:2:22-81
+12
+13    <permission
+13-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:5:5-116
+14        android:name="com.andrerinas.headunitrevived.bydhudtest.permission.NAVIGATION_UPDATE"
+14-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:5:17-77
+15        android:protectionLevel="signature" />
+15-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:5:78-113
+16
+17    <uses-permission android:name="com.byd.car.server.PROVIDER" />
+17-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:6:5-67
+17-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:6:22-64
+18
+19    <queries>
+19-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:9:5-18:15
+20        <provider android:authorities="com.byd.car.server.provider.CarServiceProvider" />
+20-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:7:14-95
+20-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:7:24-92
+21
+22        <intent>
+22-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:10:9-12:18
+23            <action android:name="android.settings.WIFI_SETTINGS" />
+23-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:11:13-69
+23-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:11:21-66
+24        </intent>
+25
+26        <package android:name="com.byd.clusterdebug" />
+26-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:13:9-56
+26-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:13:18-53
+27        <package android:name="com.byd.amapservice" />
+27-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:14:9-55
+27-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:14:18-52
+28        <package android:name="com.example.amapservice" />
+28-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:15:9-59
+28-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:15:18-56
+29        <package android:name="com.ts.car.someip.service" />
+29-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:16:9-61
+29-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:16:18-58
+30        <package android:name="com.google.android.projection.gearhead" />
+30-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:17:9-74
+30-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:17:18-71
+31    </queries>
+32    <queries>
+32-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:9:5-18:15
+33        <package android:name="com.byd.clusterdebug" />
+33-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:13:9-56
+33-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:13:18-53
+34    </queries>
+35
+36    <uses-feature
+36-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:20:5-22:36
+37        android:name="android.hardware.usb.host"
+37-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:21:9-49
+38        android:required="false" />
+38-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:22:9-33
+39    <uses-feature
+39-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:23:5-25:36
+40        android:name="android.hardware.screen.landscape"
+40-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:24:9-57
+41        android:required="false" />
+41-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:25:9-33
+42    <uses-feature
+42-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:26:5-28:36
+43        android:name="android.hardware.wifi"
+43-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:27:9-45
+44        android:required="false" />
+44-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:28:9-33
+45    <uses-feature
+45-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:29:5-31:36
+46        android:name="android.hardware.location"
+46-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:30:9-49
+47        android:required="false" />
+47-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:31:9-33
+48    <uses-feature
+48-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:32:5-34:36
+49        android:name="android.hardware.location.gps"
+49-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:33:9-53
+50        android:required="false" />
+50-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:34:9-33
+51    <uses-feature
+51-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:35:5-37:36
+52        android:name="android.hardware.location.network"
+52-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:36:9-57
+53        android:required="false" />
+53-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:37:9-33
+54    <uses-feature
+54-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:38:5-40:36
+55        android:name="android.hardware.microphone"
+55-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:39:9-51
+56        android:required="false" />
+56-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:40:9-33
+57    <uses-feature
+57-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:41:5-43:36
+58        android:name="android.hardware.bluetooth"
+58-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:42:9-50
+59        android:required="false" />
+59-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:43:9-33
+60
+61    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+61-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:49:5-76
+61-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:49:22-73
+62    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+62-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:50:5-76
+62-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:50:22-73
+63    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+63-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:51:5-79
+63-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:51:22-76
+64    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+64-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:52:5-81
+64-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:52:22-78
+65    <uses-permission
+65-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:53:5-56:31
+66        android:name="android.permission.NEARBY_WIFI_DEVICES"
+66-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:54:9-62
+67        android:usesPermissionFlags="neverForLocation" />
+67-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:55:9-55
+68    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- Optional, granted by the owner: follow the stock cluster screens (dashboard side map). -->
+68-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:57:5-78
+68-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:57:22-75
+69    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+69-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:59:5-114
+69-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:59:22-75
+70    <uses-permission android:name="android.permission.WAKE_LOCK" />
+70-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:60:5-68
+70-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:60:22-65
+71    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+71-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:61:5-79
+71-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:61:22-76
+72    <uses-permission android:name="android.permission.INTERNET" />
+72-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:62:5-67
+72-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:62:22-64
+73    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+73-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:63:5-79
+73-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:63:22-76
+74    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+74-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:64:5-75
+74-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:64:22-72
+75    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+75-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:65:5-75
+75-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:65:22-72
+76    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+76-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:66:5-75
+76-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:66:22-72
+77    <uses-permission android:name="android.permission.BLUETOOTH" />
+77-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:67:5-68
+77-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:67:22-65
+78    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+78-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:68:5-74
+78-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:68:22-71
+79    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+79-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:69:5-76
+79-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:69:22-73
+80    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+80-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:70:5-73
+80-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:70:22-70
+81    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+81-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:71:5-78
+81-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:71:22-75
+82    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+82-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:72:5-81
+82-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:72:22-78
+83    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+83-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:73:5-80
+83-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:73:22-77
+84    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+84-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:74:5-71
+84-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:74:22-68
+85    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+85-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:75:5-73
+85-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:75:22-70
+86    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+86-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:76:5-81
+86-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:76:22-78
+87    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+87-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:77:5-77
+87-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:77:22-74
+88    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+88-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:78:5-77
+88-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:78:22-74
+89    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+89-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:79:5-94
+89-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:79:22-91
+90    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+90-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:80:5-92
+90-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:80:22-89
+91    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+91-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:81:5-81
+91-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:81:22-78
+92
+93    <permission
+93-->[androidx.core:core:1.12.0] /home/runner/.gradle/caches/8.13/transforms/9f15916e77145aeb64057184f98ba8d7/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+94        android:name="com.andrerinas.headunitrevived.bydhudtest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+94-->[androidx.core:core:1.12.0] /home/runner/.gradle/caches/8.13/transforms/9f15916e77145aeb64057184f98ba8d7/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+95        android:protectionLevel="signature" />
+95-->[androidx.core:core:1.12.0] /home/runner/.gradle/caches/8.13/transforms/9f15916e77145aeb64057184f98ba8d7/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+96
+97    <uses-permission android:name="com.andrerinas.headunitrevived.bydhudtest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+97-->[androidx.core:core:1.12.0] /home/runner/.gradle/caches/8.13/transforms/9f15916e77145aeb64057184f98ba8d7/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+97-->[androidx.core:core:1.12.0] /home/runner/.gradle/caches/8.13/transforms/9f15916e77145aeb64057184f98ba8d7/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+98    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+98-->[dev.rikka.shizuku:provider:13.1.5] /home/runner/.gradle/caches/8.13/transforms/6151c3c0853bb33848761118371fa177/transformed/jetified-provider-13.1.5/AndroidManifest.xml:8:5-78
+98-->[dev.rikka.shizuku:provider:13.1.5] /home/runner/.gradle/caches/8.13/transforms/6151c3c0853bb33848761118371fa177/transformed/jetified-provider-13.1.5/AndroidManifest.xml:8:22-75
+99
+100    <application
+100-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:83:5-370:19
+101        android:name="com.andrerinas.openheadunit.App"
+101-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:84:9-28
+102        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+102-->[androidx.core:core:1.12.0] /home/runner/.gradle/caches/8.13/transforms/9f15916e77145aeb64057184f98ba8d7/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+103        android:debuggable="true"
+104        android:extractNativeLibs="true"
+105        android:hardwareAccelerated="true"
+105-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:85:9-43
+106        android:icon="@mipmap/ic_launcher"
+106-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:86:9-43
+107        android:label="DiAuto HUD Test"
+107-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:87:9-38
+108        android:largeHeap="true"
+108-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:88:9-33
+109        android:localeConfig="@xml/locales_config"
+109-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:90:9-51
+110        android:supportsRtl="true" >
+110-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:89:9-35
+111        <receiver
+111-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:10:9-155
+112            android:name="com.andrerinas.openheadunit.hud.HudStatusReceiver"
+112-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:10:19-83
+113            android:exported="true"
+113-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:10:84-107
+114            android:permission="android.permission.DUMP" />
+114-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:10:108-152
+115
+116        <activity
+116-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:11:9-163
+117            android:name="com.andrerinas.openheadunit.hud.StandaloneHudDemoActivity"
+117-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:11:19-91
+118            android:exported="true"
+118-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:11:92-115
+119            android:permission="android.permission.DUMP" />
+119-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/debug/AndroidManifest.xml:11:116-160
+120
+121        <service
+121-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/github/AndroidManifest.xml:4:9-11:19
+122            android:name="com.andrerinas.openheadunit.aap.DummyVpnService"
+122-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/github/AndroidManifest.xml:5:13-48
+123            android:exported="false"
+123-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/github/AndroidManifest.xml:7:13-37
+124            android:permission="android.permission.BIND_VPN_SERVICE" >
+124-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/github/AndroidManifest.xml:6:13-69
+125            <intent-filter>
+125-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/github/AndroidManifest.xml:8:13-10:29
+126                <action android:name="android.net.VpnService" />
+126-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/github/AndroidManifest.xml:9:17-65
+126-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/github/AndroidManifest.xml:9:25-62
+127            </intent-filter>
+128        </service>
+129
+130        <activity
+130-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:93:9-103:20
+131            android:name="com.andrerinas.openheadunit.aap.AapProjectionActivity"
+131-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:94:13-54
+132            android:configChanges="uiMode|orientation|screenSize|screenLayout|smallestScreenSize"
+132-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:95:13-98
+133            android:exported="true"
+133-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:96:13-36
+134            android:hardwareAccelerated="true"
+134-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:97:13-47
+135            android:launchMode="singleTask"
+135-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:98:13-44
+136            android:resizeableActivity="true"
+136-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:99:13-46
+137            android:supportsPictureInPicture="true"
+137-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:100:13-52
+138            android:theme="@style/AppTheme" >
+138-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:101:13-44
+139        </activity>
+140        <activity
+140-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:105:9-117:20
+141            android:name="com.andrerinas.openheadunit.app.UsbAttachedActivity"
+141-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:106:13-52
+142            android:directBootAware="true"
+142-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:107:13-43
+143            android:exported="true"
+143-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:108:13-36
+144            android:launchMode="singleTop"
+144-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:109:13-43
+145            android:theme="@style/AppTheme.Translucent" >
+145-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:110:13-56
+146            <intent-filter>
+146-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:111:13-113:29
+147                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+147-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:112:17-90
+147-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:112:25-87
+148            </intent-filter>
+149
+150            <meta-data
+150-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:114:13-116:61
+151                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+151-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:115:17-79
+152                android:resource="@xml/usb_device_filter" />
+152-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:116:17-58
+153        </activity>
+154        <activity
+154-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:120:9-195:20
+155            android:name="com.andrerinas.openheadunit.main.MainActivity"
+155-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:121:13-46
+156            android:configChanges="keyboardHidden|uiMode"
+156-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:122:13-58
+157            android:exported="true"
+157-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:123:13-36
+158            android:launchMode="singleTask"
+158-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:124:13-44
+159            android:theme="@style/SplashTheme" >
+159-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:125:13-47
+160
+161            <!-- Primary Launcher Filter -->
+162            <intent-filter>
+162-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:128:13-133:29
+163                <action android:name="android.intent.action.MAIN" />
+163-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:129:17-69
+163-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:129:25-66
+164
+165                <category android:name="android.intent.category.LAUNCHER" />
+165-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:131:17-77
+165-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:131:27-74
+166                <category android:name="android.intent.category.DEFAULT" />
+166-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+166-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+167            </intent-filter>
+168
+169            <!-- Navigation Role Registration (allows selecting as default nav app) -->
+170            <intent-filter>
+170-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:136:13-141:29
+171                <action android:name="android.intent.action.MAIN" />
+171-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:129:17-69
+171-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:129:25-66
+172
+173                <category android:name="android.intent.category.APP_MAPS" />
+173-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:139:17-77
+173-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:139:27-74
+174                <category android:name="android.intent.category.APP_NAVIGATION" />
+174-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:140:17-83
+174-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:140:27-80
+175            </intent-filter>
+176
+177            <!-- Navigation Intent Filter (handles system navigate actions) -->
+178            <intent-filter>
+178-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:144:13-147:29
+179                <action android:name="android.intent.action.NAVIGATE" />
+179-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:145:17-73
+179-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:145:25-70
+180
+181                <category android:name="android.intent.category.DEFAULT" />
+181-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+181-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+182            </intent-filter>
+183
+184            <meta-data
+184-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:149:13-151:53
+185                android:name="android.app.shortcuts"
+185-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:150:17-53
+186                android:resource="@xml/shortcuts" />
+186-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:151:17-50
+187
+188            <!-- Navigation Intent Filters & Deep Links -->
+189            <intent-filter>
+189-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:154:13-162:29
+190                <action android:name="android.intent.action.VIEW" />
+190-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:17-69
+190-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:25-66
+191
+192                <category android:name="android.intent.category.DEFAULT" />
+192-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+192-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+193                <category android:name="android.intent.category.BROWSABLE" />
+193-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:17-78
+193-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:27-75
+194
+195                <data android:scheme="headunit" />
+195-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+195-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+196                <data android:host="selfmode" />
+196-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+197            </intent-filter>
+198            <intent-filter>
+198-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:164:13-171:29
+199                <action android:name="android.intent.action.VIEW" />
+199-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:17-69
+199-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:25-66
+200
+201                <category android:name="android.intent.category.DEFAULT" />
+201-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+201-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+202                <category android:name="android.intent.category.BROWSABLE" />
+202-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:17-78
+202-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:27-75
+203
+204                <data android:scheme="geo" />
+204-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+204-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+205            </intent-filter>
+206            <intent-filter>
+206-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:173:13-180:29
+207                <action android:name="android.intent.action.VIEW" />
+207-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:17-69
+207-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:25-66
+208
+209                <category android:name="android.intent.category.DEFAULT" />
+209-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+209-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+210                <category android:name="android.intent.category.BROWSABLE" />
+210-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:17-78
+210-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:27-75
+211
+212                <data android:scheme="google.navigation" />
+212-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+212-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+213            </intent-filter>
+214            <intent-filter>
+214-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:182:13-194:29
+215                <action android:name="android.intent.action.VIEW" />
+215-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:17-69
+215-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:25-66
+216
+217                <category android:name="android.intent.category.DEFAULT" />
+217-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+217-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+218                <category android:name="android.intent.category.BROWSABLE" />
+218-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:17-78
+218-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:27-75
+219
+220                <data
+220-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+221                    android:host="maps.google.com"
+222                    android:scheme="http" />
+222-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+223                <data
+223-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+224                    android:host="maps.google.com"
+225                    android:scheme="https" />
+225-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+226            </intent-filter>
+227        </activity>
+228        <activity
+228-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:197:9-201:47
+229            android:name="com.andrerinas.openheadunit.main.SettingsActivity"
+229-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:198:13-50
+230            android:label="@string/settings"
+230-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:199:13-45
+231            android:theme="@style/AppTheme"
+231-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:201:13-44
+232            android:windowSoftInputMode="stateHidden|adjustResize" />
+232-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:200:13-67
+233        <activity
+233-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:203:9-207:47
+234            android:name="com.andrerinas.openheadunit.main.OnboardingActivity"
+234-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:204:13-52
+235            android:exported="false"
+235-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:205:13-37
+236            android:theme="@style/AppTheme"
+236-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:207:13-44
+237            android:windowSoftInputMode="adjustResize" />
+237-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:206:13-55
+238
+239        <service
+239-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:209:9-218:19
+240            android:name="com.andrerinas.openheadunit.aap.AapService"
+240-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:210:13-43
+241            android:exported="false"
+241-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:211:13-37
+242            android:foregroundServiceType="connectedDevice|mediaPlayback"
+242-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:212:13-74
+243            android:stopWithTask="false" >
+243-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:213:13-41
+244
+245            <!-- MediaButtonReceiver looks for a Service with this intent-filter -->
+246            <intent-filter>
+246-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:215:13-217:29
+247                <action android:name="android.intent.action.MEDIA_BUTTON" />
+247-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:216:17-77
+247-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:216:25-74
+248            </intent-filter>
+249        </service>
+250        <service android:name="com.andrerinas.openheadunit.location.GpsLocationService" />
+250-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:219:9-64
+250-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:219:18-61
+251        <!--
+252 AndroidX MediaButtonReceiver: Routes MEDIA_BUTTON intents to AapService
+253             on Android 8+ where implicit broadcasts to manifest-registered receivers
+254             are restricted. This is the standard Android mechanism used by HUR.
+255        -->
+256        <receiver
+256-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:224:9-230:20
+257            android:name="androidx.media.session.MediaButtonReceiver"
+257-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:225:13-70
+258            android:exported="true" >
+258-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:226:13-36
+259            <intent-filter>
+259-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:215:13-217:29
+260                <action android:name="android.intent.action.MEDIA_BUTTON" />
+260-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:216:17-77
+260-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:216:25-74
+261            </intent-filter>
+262        </receiver>
+263        <!--
+264 Handles proprietary headunit command intents (com.android.music.*,
+265             com.syu.*, etc). MEDIA_BUTTON is handled by MediaButtonReceiver above.
+266        -->
+267        <receiver
+267-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:234:9-245:20
+268            android:name="com.andrerinas.openheadunit.app.RemoteControlReceiver"
+268-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:235:13-54
+269            android:exported="true" >
+269-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:236:13-36
+270            <intent-filter android:priority="1000" >
+270-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:237:13-244:29
+270-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:237:28-51
+271                <action android:name="com.android.music.musicservicecommand" />
+271-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:238:17-80
+271-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:238:25-77
+272                <action android:name="com.android.music.playstatechanged" />
+272-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:239:17-77
+272-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:239:25-74
+273                <action android:name="com.android.music.metachanged" />
+273-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:240:17-72
+273-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:240:25-69
+274                <action android:name="com.android.music.playbackcomplete" />
+274-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:241:17-77
+274-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:241:25-74
+275                <action android:name="com.android.music.queuechanged" />
+275-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:242:17-73
+275-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:242:25-70
+276                <action android:name="com.syu.ms.action.external_command" />
+276-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:243:17-77
+276-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:243:25-74
+277            </intent-filter>
+278        </receiver>
+279        <!--
+280 Comprehensive receiver for steering wheel and hardware buttons,
+281             covering both standard Android events and proprietary Chinese headunit broadcasts.
+282        -->
+283        <receiver
+283-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:249:9-271:20
+284            android:name="com.andrerinas.openheadunit.connection.CarKeyReceiver"
+284-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:250:13-54
+285            android:exported="true" >
+285-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:251:13-36
+286            <intent-filter android:priority="1000" >
+286-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:252:13-270:29
+286-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:252:28-51
+287                <action android:name="android.intent.action.MEDIA_BUTTON" />
+287-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:216:17-77
+287-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:216:25-74
+288                <action android:name="hy.intent.action.MEDIA_BUTTON" />
+288-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:254:17-72
+288-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:254:25-69
+289                <action android:name="com.nwd.action.ACTION_KEY_VALUE" />
+289-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:255:17-74
+289-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:255:25-71
+290                <action android:name="com.microntek.irkeyUp" />
+290-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:256:17-64
+290-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:256:25-61
+291                <action android:name="com.microntek.irkeyDown" />
+291-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:257:17-66
+291-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:257:25-63
+292                <action android:name="com.winca.service.Setting.KEY_ACTION" />
+292-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:258:17-79
+292-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:258:25-76
+293                <action android:name="android.intent.action.C3_HARDKEY" />
+293-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:259:17-75
+293-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:259:25-72
+294                <action android:name="IKeyClick.KEY_CLICK" />
+294-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:260:17-62
+294-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:260:25-59
+295                <action android:name="com.eryanet.music.prev" />
+295-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:261:17-65
+295-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:261:25-62
+296                <action android:name="com.eryanet.music.next" />
+296-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:262:17-65
+296-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:262:25-62
+297                <action android:name="com.eryanet.media.playorpause" />
+297-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:263:17-72
+297-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:263:25-69
+298                <action android:name="com.eryanet.media.play" />
+298-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:264:17-65
+298-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:264:25-62
+299                <action android:name="com.eryanet.media.pause" />
+299-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:265:17-66
+299-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:265:25-63
+300                <action android:name="com.bz.action.phone.pickup" />
+300-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:266:17-69
+300-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:266:25-66
+301                <action android:name="com.bz.action.phone.hangup" />
+301-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:267:17-69
+301-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:267:25-66
+302                <action android:name="com.tencent.qqmusiccar.action.MEDIA_BUTTON_INNER_ONKEY" />
+302-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:268:17-97
+302-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:268:25-94
+303                <action android:name="cn.kuwo.kwmusicauto.action.MEDIA_BUTTON" />
+303-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:269:17-82
+303-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:269:25-79
+304            </intent-filter>
+305        </receiver>
+306        <receiver
+306-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:273:9-296:20
+307            android:name="com.andrerinas.openheadunit.app.BootCompleteReceiver"
+307-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:274:13-53
+308            android:directBootAware="true"
+308-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:275:13-43
+309            android:exported="true" >
+309-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:276:13-36
+310            <intent-filter>
+310-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:277:13-295:29
+311
+312                <!-- Standard Android boot -->
+313                <action android:name="android.intent.action.BOOT_COMPLETED" />
+313-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:279:17-79
+313-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:279:25-76
+314                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+314-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:280:17-86
+314-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:280:25-83
+315                <action android:name="android.intent.action.USER_UNLOCKED" />
+315-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:281:17-78
+315-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:281:25-75
+316                <!-- Generic / OEM quick boot -->
+317                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+317-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:283:17-82
+317-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:283:25-79
+318                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+318-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:284:17-82
+318-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:284:25-79
+319                <!-- MediaTek IPO (Instant Power On) -->
+320                <action android:name="com.mediatek.intent.action.QUICKBOOT_POWERON" />
+320-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:286:17-87
+320-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:286:25-84
+321                <action android:name="com.mediatek.intent.action.BOOT_IPO" />
+321-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:287:17-78
+321-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:287:25-75
+322                <!-- FYT / GLSX head units (ACC ignition wake) -->
+323                <action android:name="com.fyt.boot.ACCON" />
+323-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:289:17-61
+323-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:289:25-58
+324                <action android:name="com.glsx.boot.ACCON" />
+324-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:290:17-62
+324-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:290:25-59
+325                <action android:name="android.intent.action.ACTION_MT_COMMAND_SLEEP_OUT" />
+325-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:291:17-92
+325-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:291:25-89
+326                <!-- Microntek / MTCD / PX3 head units (ACC wake) -->
+327                <action android:name="com.cayboy.action.ACC_ON" />
+327-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:293:17-67
+327-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:293:25-64
+328                <action android:name="com.carboy.action.ACC_ON" />
+328-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:294:17-67
+328-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:294:25-64
+329            </intent-filter>
+330        </receiver>
+331        <receiver
+331-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:298:9-305:20
+332            android:name="com.andrerinas.openheadunit.app.AutoStartReceiver"
+332-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:299:13-50
+333            android:directBootAware="true"
+333-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:300:13-43
+334            android:exported="true" >
+334-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:301:13-36
+335            <intent-filter>
+335-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:302:13-304:29
+336                <action android:name="android.bluetooth.device.action.ACL_CONNECTED" />
+336-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:303:17-88
+336-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:303:25-85
+337            </intent-filter>
+338        </receiver>
+339        <receiver
+339-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:307:9-314:20
+340            android:name="com.andrerinas.openheadunit.app.WifiAutoStartReceiver"
+340-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:308:13-54
+341            android:directBootAware="true"
+341-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:309:13-43
+342            android:exported="true" >
+342-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:310:13-36
+343            <intent-filter>
+343-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:311:13-313:29
+344                <action android:name="android.net.wifi.STATE_CHANGE" />
+344-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:312:17-72
+344-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:312:25-69
+345            </intent-filter>
+346        </receiver>
+347
+348        <activity
+348-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:316:9-351:20
+349            android:name="com.andrerinas.openheadunit.main.AutomationActivity"
+349-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:317:13-52
+350            android:excludeFromRecents="true"
+350-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:318:13-46
+351            android:exported="true"
+351-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:319:13-36
+352            android:noHistory="true"
+352-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:320:13-37
+353            android:taskAffinity=""
+353-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:321:13-36
+354            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+354-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:322:13-72
+355            <intent-filter>
+355-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:323:13-331:29
+356                <action android:name="com.andrerinas.openheadunit.ACTION_SET_NIGHT_MODE" />
+356-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:324:17-92
+356-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:324:25-89
+357                <action android:name="com.andrerinas.openheadunit.ACTION_CONNECT" />
+357-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:325:17-85
+357-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:325:25-82
+358                <action android:name="com.andrerinas.openheadunit.ACTION_DISCONNECT" />
+358-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:326:17-88
+358-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:326:25-85
+359                <action android:name="com.andrerinas.openheadunit.ACTION_START_SELF_MODE" />
+359-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:327:17-93
+359-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:327:25-90
+360                <action android:name="com.andrerinas.openheadunit.ACTION_STOP_SERVICE" />
+360-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:328:17-90
+360-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:328:25-87
+361
+362                <category android:name="android.intent.category.DEFAULT" />
+362-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+362-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+363            </intent-filter>
+364            <intent-filter>
+364-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:332:13-350:29
+365                <action android:name="android.intent.action.VIEW" />
+365-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:17-69
+365-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:155:25-66
+366
+367                <category android:name="android.intent.category.DEFAULT" />
+367-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:17-76
+367-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:132:27-73
+368                <category android:name="android.intent.category.BROWSABLE" />
+368-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:17-78
+368-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:158:27-75
+369
+370                <data
+370-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+371                    android:host="connect"
+372                    android:scheme="headunit" />
+372-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+373                <data
+373-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+374                    android:host="disconnect"
+375                    android:scheme="headunit" />
+375-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+376                <data
+376-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+377                    android:host="nightmode"
+378                    android:scheme="headunit" />
+378-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+379                <data
+379-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:17-51
+380                    android:host="exit"
+381                    android:scheme="headunit" />
+381-->/home/runner/work/DiAuto-GWM/DiAuto-GWM/app/src/main/AndroidManifest.xml:160:23-48
+382            </intent-filter>
+383        </activity>
+384
+385        <provider
+386            android:name="androidx.core.content.FileProvider"
+387            android:authorities="com.andrerinas.headunitrevived.bydhudtest.fileprovider"
+388            android:exported="false"
+389            android:grantUriPermissions="true" >
+390            <meta-data
+391                android:name="android.support.FILE_PROVIDER_PATHS"
+392                android:resource="@xml/provider_paths" />
+393        </provider>
+394        <provider
+395            android:name="rikka.shizuku.ShizukuProvider"
+396            android:authorities="com.andrerinas.headunitrevived.bydhudtest.shizuku"
+397            android:enabled="true"
+398            android:exported="true"
+399            android:multiprocess="false"
+400            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+401
+402        <service
+402-->[com.google.android.gms:play-services-nearby:19.3.0] /home/runner/.gradle/caches/8.13/transforms/626c565d249fe8ca92e6bba33ea5c28b/transformed/jetified-play-services-nearby-19.3.0/AndroidManifest.xml:9:9-214
+403            android:name="com.google.android.gms.nearby.exposurenotification.WakeUpService"
+403-->[com.google.android.gms:play-services-nearby:19.3.0] /home/runner/.gradle/caches/8.13/transforms/626c565d249fe8ca92e6bba33ea5c28b/transformed/jetified-play-services-nearby-19.3.0/AndroidManifest.xml:9:18-97
+404            android:exported="true"
+404-->[com.google.android.gms:play-services-nearby:19.3.0] /home/runner/.gradle/caches/8.13/transforms/626c565d249fe8ca92e6bba33ea5c28b/transformed/jetified-play-services-nearby-19.3.0/AndroidManifest.xml:9:98-121
+405            android:permission="com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK" />
+405-->[com.google.android.gms:play-services-nearby:19.3.0] /home/runner/.gradle/caches/8.13/transforms/626c565d249fe8ca92e6bba33ea5c28b/transformed/jetified-play-services-nearby-19.3.0/AndroidManifest.xml:9:122-211
+406
+407        <activity
+407-->[com.google.android.gms:play-services-base:18.5.0] /home/runner/.gradle/caches/8.13/transforms/25035af9e5f1449cfa1c11b3d55e284d/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+408            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+408-->[com.google.android.gms:play-services-base:18.5.0] /home/runner/.gradle/caches/8.13/transforms/25035af9e5f1449cfa1c11b3d55e284d/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+409            android:exported="false"
+409-->[com.google.android.gms:play-services-base:18.5.0] /home/runner/.gradle/caches/8.13/transforms/25035af9e5f1449cfa1c11b3d55e284d/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+410            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+410-->[com.google.android.gms:play-services-base:18.5.0] /home/runner/.gradle/caches/8.13/transforms/25035af9e5f1449cfa1c11b3d55e284d/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+411
+412        <meta-data
+412-->[com.google.android.gms:play-services-basement:18.4.0] /home/runner/.gradle/caches/8.13/transforms/879fad6cb667d3580960bcfd1d7e82bb/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+413            android:name="com.google.android.gms.version"
+413-->[com.google.android.gms:play-services-basement:18.4.0] /home/runner/.gradle/caches/8.13/transforms/879fad6cb667d3580960bcfd1d7e82bb/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+414            android:value="@integer/google_play_services_version" />
+414-->[com.google.android.gms:play-services-basement:18.4.0] /home/runner/.gradle/caches/8.13/transforms/879fad6cb667d3580960bcfd1d7e82bb/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+415
+416        <provider
+416-->[androidx.emoji2:emoji2:1.2.0] /home/runner/.gradle/caches/8.13/transforms/bea1111d23618aa141a23a3f8c0999f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+417            android:name="androidx.startup.InitializationProvider"
+417-->[androidx.emoji2:emoji2:1.2.0] /home/runner/.gradle/caches/8.13/transforms/bea1111d23618aa141a23a3f8c0999f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+418            android:authorities="com.andrerinas.headunitrevived.bydhudtest.androidx-startup"
+418-->[androidx.emoji2:emoji2:1.2.0] /home/runner/.gradle/caches/8.13/transforms/bea1111d23618aa141a23a3f8c0999f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+419            android:exported="false" >
+419-->[androidx.emoji2:emoji2:1.2.0] /home/runner/.gradle/caches/8.13/transforms/bea1111d23618aa141a23a3f8c0999f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+420            <meta-data
+420-->[androidx.emoji2:emoji2:1.2.0] /home/runner/.gradle/caches/8.13/transforms/bea1111d23618aa141a23a3f8c0999f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+421                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+421-->[androidx.emoji2:emoji2:1.2.0] /home/runner/.gradle/caches/8.13/transforms/bea1111d23618aa141a23a3f8c0999f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+422                android:value="androidx.startup" />
+422-->[androidx.emoji2:emoji2:1.2.0] /home/runner/.gradle/caches/8.13/transforms/bea1111d23618aa141a23a3f8c0999f6/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+423            <meta-data
+423-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/runner/.gradle/caches/8.13/transforms/5b34acb0265472c9ea47ebae39c43474/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+424                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+424-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/runner/.gradle/caches/8.13/transforms/5b34acb0265472c9ea47ebae39c43474/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+425                android:value="androidx.startup" />
+425-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/runner/.gradle/caches/8.13/transforms/5b34acb0265472c9ea47ebae39c43474/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+426            <meta-data
+426-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+427                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+427-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+428                android:value="androidx.startup" />
+428-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+429        </provider>
+430
+431        <receiver
+431-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+432            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+432-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+433            android:directBootAware="false"
+433-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+434            android:enabled="true"
+434-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+435            android:exported="true"
+435-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+436            android:permission="android.permission.DUMP" >
+436-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+437            <intent-filter>
+437-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+438                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+438-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+438-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+439            </intent-filter>
+440            <intent-filter>
+440-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+441                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+441-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+441-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+442            </intent-filter>
+443            <intent-filter>
+443-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+444                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+444-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+444-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+445            </intent-filter>
+446            <intent-filter>
+446-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+447                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+447-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+447-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/runner/.gradle/caches/8.13/transforms/4a970d970851d1eb60b3f24d8e6b3260/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+448            </intent-filter>
+449        </receiver>
+450
+451        <meta-data
+451-->[dev.rikka.shizuku:provider:13.1.5] /home/runner/.gradle/caches/8.13/transforms/6151c3c0853bb33848761118371fa177/transformed/jetified-provider-13.1.5/AndroidManifest.xml:11:9-13:36
+452            android:name="moe.shizuku.client.V3_SUPPORT"
+452-->[dev.rikka.shizuku:provider:13.1.5] /home/runner/.gradle/caches/8.13/transforms/6151c3c0853bb33848761118371fa177/transformed/jetified-provider-13.1.5/AndroidManifest.xml:12:13-57
+453            android:value="true" />
+453-->[dev.rikka.shizuku:provider:13.1.5] /home/runner/.gradle/caches/8.13/transforms/6151c3c0853bb33848761118371fa177/transformed/jetified-provider-13.1.5/AndroidManifest.xml:13:13-33
+454    </application>
+455
+456</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.121Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="a standard-fallback group is never remade - nobody asked for a band" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.001"/>
+  <testcase name="the labels are the ones the log and the briefs grep for" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.0"/>
+  <testcase name="a 5GHz request that came up on 2_4GHz is remade" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.0"/>
+  <testcase name="the default is unchanged - 5GHz is what Native AA asks for" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.0"/>
+  <testcase name="the retry budget still bounds it" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.001"/>
+  <testcase name="the override asks for 2_4GHz" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.0"/>
+  <testcase name="a group deliberately put on 2_4GHz is never remade - the round would measure nothing otherwise" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.0"/>
+  <testcase name="an unknown frequency is not a mismatch" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.0"/>
+  <testcase name="a 5GHz request that came up on 5GHz is left alone" classname="com.andrerinas.openheadunit.aap.NativeGroupBandPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.312Z" hostname="runnervm8k3b6" time="0.003">
+  <properties/>
+  <testcase name="800x480 saves too, and the floor does not bind there" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.001"/>
+  <testcase name="720p asks for well under the tier it used to take" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <testcase name="a tiny picture still gets a usable buffer" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <testcase name="the floor cannot push a request past its cap" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <testcase name="the request never grows with resolution beyond its cap and never shrinks with it" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <testcase name="4K needs most of its tier, which is why the tier exists" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <testcase name="1080p stays inside the tier and still saves" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <testcase name="unknown dimensions leave the cap alone" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <testcase name="the cap is never exceeded, whatever the resolution claims" classname="com.andrerinas.openheadunit.decoder.CodecInputSizePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,31 @@
+<variant
+    name="githubDebug"
+    useSupportLibraryVectorDrawables="true"
+    package="com.andrerinas.openheadunit"
+    minSdkVersion="16"
+    targetSdkVersion="36.0"
+    debuggable="true"
+    mergedManifest="build/intermediates/merged_manifest/githubDebug/processGithubDebugMainManifest/AndroidManifest.xml"
+    manifestMergeReport="build/outputs/logs/manifest-merger-github-debug-report.txt"
+    partialResultsDir="build/intermediates/android_test_lint_partial_results/githubDebug/lintAnalyzeGithubDebugAndroidTest/out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+  </sourceProviders>
+  <testSourceProviders>
+    <sourceProvider
+        manifests="src/androidTest/AndroidManifest.xml"
+        javaDirectories="src/androidTest/java:src/androidTestGithub/java:src/androidTestDebug/java:src/androidTestGithubDebug/java:src/androidTest/kotlin:src/androidTestGithub/kotlin:src/androidTestDebug/kotlin:src/androidTestGithubDebug/kotlin"
+        resDirectories="src/androidTest/res:src/androidTestGithub/res:src/androidTestDebug/res:src/androidTestGithubDebug/res"
+        assetsDirectories="src/androidTest/assets:src/androidTestGithub/assets:src/androidTestDebug/assets:src/androidTestGithubDebug/assets"
+        androidTest="true"/>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      type="INSTRUMENTATION_TEST"
+      applicationId="com.andrerinas.headunitrevived.bydhudtest.test"
+      generatedResourceFolders="build/generated/res/resValues/androidTest/github/debug"
+      desugaredMethodsFiles="/home/runner/.gradle/caches/8.13/transforms/a666f5e1376efd064acd28763cdad820/transformed/D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

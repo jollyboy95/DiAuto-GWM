@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.083Z" hostname="runnervm8k3b6" time="0.01">
+  <properties/>
+  <testcase name="a healthy link says nothing at all" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.003"/>
+  <testcase name="the first message after a reset opens no gap" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.0"/>
+  <testcase name="the report reads as the offline script's fields" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.0"/>
+  <testcase name="a gap spanning a window boundary is counted once" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.001"/>
+  <testcase name="the waveform the second reporter's capture measured" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.0"/>
+  <testcase name="the waveform one reporter's verbose capture measured" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.0"/>
+  <testcase name="only the window holding a gap speaks" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.002"/>
+  <testcase name="the threshold is exclusive" classname="com.andrerinas.openheadunit.aap.LinkGapMonitorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

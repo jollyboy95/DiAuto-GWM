@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.095Z" hostname="runnervm8k3b6" time="0.004">
+  <properties/>
+  <testcase name="a usb session is left alone by a wifi toggle, whatever wireless mode is stored" classname="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" time="0.001"/>
+  <testcase name="the wifi answer is the exact complement of the two routes that own their own network" classname="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" time="0.001"/>
+  <testcase name="station wifi going down leaves a wifi direct session alone" classname="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" time="0.0"/>
+  <testcase name="station wifi going down closes the routes that ride it" classname="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" time="0.0"/>
+  <testcase name="a device shutdown takes every route down, so every route closes first" classname="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" time="0.001"/>
+  <testcase name="station wifi going down leaves a session on our own access point alone" classname="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" time="0.0"/>
+  <testcase name="a device shutdown still closes a usb session" classname="com.andrerinas.openheadunit.aap.LinkLossTeardownPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

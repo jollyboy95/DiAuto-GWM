@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.328Z" hostname="runnervm8k3b6" time="0.008">
+  <properties/>
+  <testcase name="the official key is preferred where the component advertises it" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.003"/>
+  <testcase name="an unknown vendor gets nothing rather than a guess" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.0"/>
+  <testcase name="the two spellings are never combined" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.0"/>
+  <testcase name="each vendor family is matched by its component name" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.0"/>
+  <testcase name="not asking for low latency is exactly the shipped behaviour" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.0"/>
+  <testcase name="the last rung is always empty, whatever else is offered" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.001"/>
+  <testcase name="the Codec2 spellings of the same families are matched too" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.0"/>
+  <testcase name="the official key is not used below the API that has it, even if the feature is claimed" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.0"/>
+  <testcase name="the vendor spelling is used when the component does not advertise the feature" classname="com.andrerinas.openheadunit.decoder.DecoderConfigLadderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

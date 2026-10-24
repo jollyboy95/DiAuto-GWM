@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.163Z" hostname="runnervm8k3b6" time="0.009">
+  <properties/>
+  <testcase name="both thresholds are exclusive at the boundary" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="a dead session is not nudged" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.001"/>
+  <testcase name="a stopped picture on a silent link is a lost connection" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="the loop is decided by the picture, never by what is drawn over it" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="a picture that stops while the link keeps talking is not a lost connection" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="no request while the picture is still arriving" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="a picture on the current surface ends the loop" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="the escalation taking over ends the loop" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="a silent link alone is not enough while frames are arriving" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="a surface that has never shown a picture is nudged for" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.001"/>
+  <testcase name="recovery still fires on a stopped picture with a live link" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.001"/>
+  <testcase name="the session is live through the handshake window and the whole projection" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="every state outside a live session stops the watchdog" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.002"/>
+  <testcase name="requests are paced by the keyframe throttle" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="nothing is asked for before there is a surface to ask about" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <testcase name="never having heard from the phone reads as silent, and still needs a frame gap" classname="com.andrerinas.openheadunit.aap.ProjectionWatchdogPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

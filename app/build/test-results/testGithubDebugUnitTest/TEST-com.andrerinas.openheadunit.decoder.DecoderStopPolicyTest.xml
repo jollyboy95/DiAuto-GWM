@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.DecoderStopPolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.343Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="a surface teardown is not mistaken for a decoder restart" classname="com.andrerinas.openheadunit.decoder.DecoderStopPolicyTest" time="0.001"/>
+  <testcase name="a disconnect ends the session" classname="com.andrerinas.openheadunit.decoder.DecoderStopPolicyTest" time="0.0"/>
+  <testcase name="the decoder's own restarts do not end the session" classname="com.andrerinas.openheadunit.decoder.DecoderStopPolicyTest" time="0.0"/>
+  <testcase name="an unrecognised reason ends the session" classname="com.andrerinas.openheadunit.decoder.DecoderStopPolicyTest" time="0.0"/>
+  <testcase name="a surface teardown does not end the session" classname="com.andrerinas.openheadunit.decoder.DecoderStopPolicyTest" time="0.0"/>
+  <testcase name="matching is exact, not a prefix or a substring" classname="com.andrerinas.openheadunit.decoder.DecoderStopPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

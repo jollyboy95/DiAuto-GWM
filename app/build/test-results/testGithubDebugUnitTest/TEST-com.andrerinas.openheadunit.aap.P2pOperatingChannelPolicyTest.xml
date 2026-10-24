@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.142Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="the 2_4 GHz channels use the other base, so a mix-up would be visible" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.001"/>
+  <testcase name="a modern device is never given a channel, because it has the supported band request" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="a channel the platform would reject has no frequency" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="both offered channels are outside the DFS range a group owner may not use" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="channel 36 is 5180 MHz, which is what makes this worth doing" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="opting in on an old device asks for channel 36" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="the upper band channel is 5745 MHz" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="the default is to ask for nothing, so an untouched install behaves as it always did" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="the upper band is only reached when it is asked for" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="this applies only below the API that has a band request" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="every channel this policy can return is one the platform accepts" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <testcase name="the 2_4 GHz conversion agrees with the one that reads a group's frequency back" classname="com.andrerinas.openheadunit.aap.P2pOperatingChannelPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

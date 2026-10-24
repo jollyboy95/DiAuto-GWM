@@ -1,0 +1,33 @@
+<variant
+    name="githubDebug"
+    useSupportLibraryVectorDrawables="true"
+    package="com.andrerinas.openheadunit"
+    minSdkVersion="16"
+    targetSdkVersion="36.0"
+    debuggable="true"
+    mergedManifest="build/intermediates/merged_manifest/githubDebug/processGithubDebugMainManifest/AndroidManifest.xml"
+    manifestMergeReport="build/outputs/logs/manifest-merger-github-debug-report.txt"
+    proguardFiles="build/intermediates/default_proguard_files/global/proguard-android.txt-8.13.2"
+    partialResultsDir="build/intermediates/lint_partial_results/githubDebug/lintAnalyzeGithubDebug/out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifests="src/main/AndroidManifest.xml:src/debug/AndroidManifest.xml:src/github/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/github/java:src/debug/java:src/githubDebug/java:src/main/kotlin:src/github/kotlin:src/debug/kotlin:src/githubDebug/kotlin"
+        resDirectories="src/main/res:src/github/res:src/debug/res:src/githubDebug/res"
+        assetsDirectories="src/main/assets:build/generated/assets/root:src/github/assets:src/debug/assets:src/githubDebug/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      classOutputs="build/intermediates/javac/githubDebug/compileGithubDebugJavaWithJavac/classes:build/tmp/kotlin-classes/githubDebug:build/tmp/kapt3/classes/githubDebug:build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/githubDebug/processGithubDebugResources/R.jar"
+      type="MAIN"
+      applicationId="com.andrerinas.headunitrevived.bydhudtest"
+      generatedSourceFolders="build/generated/source/kapt/githubDebug:build/generated/ap_generated_sources/githubDebug/out:build/generated/aidl_source_output_dir/githubDebug/out:build/generated/source/buildConfig/github/debug"
+      generatedResourceFolders="build/generated/res/resValues/github/debug"
+      desugaredMethodsFiles="/home/runner/.gradle/caches/8.13/transforms/a666f5e1376efd064acd28763cdad820/transformed/D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

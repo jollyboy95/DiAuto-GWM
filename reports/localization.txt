@@ -1,0 +1,5 @@
+ar: 930 translatable resources, coverage and format arguments OK
+es: 930 translatable resources, coverage and format arguments OK
+ru: 930 translatable resources, coverage and format arguments OK
+zh-rCN: 930 translatable resources, coverage and format arguments OK
+System language configuration matches available translations

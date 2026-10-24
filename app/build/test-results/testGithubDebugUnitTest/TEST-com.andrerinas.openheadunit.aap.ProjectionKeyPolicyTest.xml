@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.ProjectionKeyPolicyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.157Z" hostname="runnervm8k3b6" time="0.003">
+  <properties/>
+  <testcase name="mapped physical back key routes to projection" classname="com.andrerinas.openheadunit.aap.ProjectionKeyPolicyTest" time="0.001"/>
+  <testcase name="unmapped back key keeps system back behavior" classname="com.andrerinas.openheadunit.aap.ProjectionKeyPolicyTest" time="0.001"/>
+  <testcase name="physical back can be mapped to another Android Auto action" classname="com.andrerinas.openheadunit.aap.ProjectionKeyPolicyTest" time="0.001"/>
+  <testcase name="non-back keys do not use the back override" classname="com.andrerinas.openheadunit.aap.ProjectionKeyPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

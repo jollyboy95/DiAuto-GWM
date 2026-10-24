@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.317Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="H264 is never overridden into H265 by the setting alone when the stream disagrees" classname="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" time="0.0"/>
+  <testcase name="an H264 stream gets an H264 decoder even when the setting says H265" classname="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" time="0.0"/>
+  <testcase name="the ordinary agreeing cases are unchanged" classname="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" time="0.0"/>
+  <testcase name="a packet with no parameter set falls back to the setting" classname="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" time="0.0"/>
+  <testcase name="a unit that cannot decode HEVC at all ignores an H265 setting" classname="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" time="0.0"/>
+  <testcase name="software HEVC keeps the setting, because the sniff cannot see HEVC there" classname="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" time="0.0"/>
+  <testcase name="an H265 stream still gets an H265 decoder when the setting says H264" classname="com.andrerinas.openheadunit.decoder.CodecTypeSelectionPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

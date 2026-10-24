@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.510Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="smallWindowFollowsTheNewestVisibleMapActivity" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.002"/>
+  <testcase name="pausedButVisibleClusterSurvivesFocusMovingToTheHeadUnit" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="stoppingAnOldInstanceDoesNotHideItsReplacement" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="smallWindowAloneRemainsVisibleAndSwitchesBothDirections" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="scenarioOnlyShowsTheMiniMapWhileItsCardIsVisible" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="switchingFromMapToSimpleWithoutAMapCardHidesTheOverlay" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="automapPackageReportsTheSameSmallAndFullWindows" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="unknownStateAndRestartCannotDisplayAStaleOverlay" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="switchingToMapDoesNotRetainTheSideLayout" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <testcase name="matchingClassNameFromAnotherPackageCannotSelectATheme" classname="com.andrerinas.openheadunit.hud.ClusterActivityStateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

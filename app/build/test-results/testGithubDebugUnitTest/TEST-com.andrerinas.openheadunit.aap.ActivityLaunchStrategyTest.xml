@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.ActivityLaunchStrategyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:30.940Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="overlay trampoline on Android 10 plus when permission granted" classname="com.andrerinas.openheadunit.aap.ActivityLaunchStrategyTest" time="0.0"/>
+  <testcase name="notification fallback on Android 10 plus without overlay permission" classname="com.andrerinas.openheadunit.aap.ActivityLaunchStrategyTest" time="0.0"/>
+  <testcase name="direct launch on Android 9 and below regardless of overlay permission" classname="com.andrerinas.openheadunit.aap.ActivityLaunchStrategyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

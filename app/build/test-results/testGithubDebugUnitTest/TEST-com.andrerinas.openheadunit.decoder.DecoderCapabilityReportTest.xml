@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.321Z" hostname="runnervm8k3b6" time="0.006">
+  <properties/>
+  <testcase name="an unknown performance point does not count against the decoder" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.0"/>
+  <testcase name="a decoder that claims all three is adequate" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.001"/>
+  <testcase name="a missing fps setting falls back to a named default rather than zero" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.0"/>
+  <testcase name="size or rate failing is enough on its own" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.0"/>
+  <testcase name="a performance point that says no is decisive" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.0"/>
+  <testcase name="the summary carries every number a report needs" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.0"/>
+  <testcase name="hardware components are not" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.002"/>
+  <testcase name="an unknown performance point prints as unknown, not null" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.0"/>
+  <testcase name="software components are recognised by the same names VideoDecoder uses" classname="com.andrerinas.openheadunit.decoder.DecoderCapabilityReportTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

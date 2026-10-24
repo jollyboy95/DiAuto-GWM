@@ -1,0 +1,2 @@
+com.andrerinas.openheadunit.contract
+string app_name

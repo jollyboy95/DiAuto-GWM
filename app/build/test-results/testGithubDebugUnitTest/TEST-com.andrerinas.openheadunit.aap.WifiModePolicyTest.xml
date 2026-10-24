@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.WifiModePolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.230Z" hostname="runnervm8k3b6" time="0.0">
+  <properties/>
+  <testcase name="helper mode uses wifi direct only with strategy 1" classname="com.andrerinas.openheadunit.aap.WifiModePolicyTest" time="0.0"/>
+  <testcase name="server and other modes never use wifi direct" classname="com.andrerinas.openheadunit.aap.WifiModePolicyTest" time="0.0"/>
+  <testcase name="omitting the transport keeps the pre-existing answer" classname="com.andrerinas.openheadunit.aap.WifiModePolicyTest" time="0.0"/>
+  <testcase name="native AA on the hotspot transport does not use wifi direct" classname="com.andrerinas.openheadunit.aap.WifiModePolicyTest" time="0.0"/>
+  <testcase name="the transport only applies to native AA mode" classname="com.andrerinas.openheadunit.aap.WifiModePolicyTest" time="0.0"/>
+  <testcase name="native AA mode uses wifi direct regardless of strategy, which does not apply to it" classname="com.andrerinas.openheadunit.aap.WifiModePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

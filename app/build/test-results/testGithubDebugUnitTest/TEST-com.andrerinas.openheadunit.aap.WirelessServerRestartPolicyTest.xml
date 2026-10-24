@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.234Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="a server still binding is waited for, never torn down" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.001"/>
+  <testcase name="assigned but not listening is the whole bug, and it rebuilds" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="a handshake retrying every few seconds cannot drive a rebuild per attempt" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="a live session is never disturbed" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="every action says why, because that is the point of the change" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.001"/>
+  <testcase name="nothing assigned yet means start, not rebuild" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="a unit that fails once an hour is never talked out of trying" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="a first ever rebuild is not held back by an unset timestamp" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="a listening server is left alone" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="every state maps to exactly one action, and none is left undecided" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="counting inside one window accumulates rather than resetting" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <testcase name="a port that will never bind stops being retried" classname="com.andrerinas.openheadunit.aap.WirelessServerRestartPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

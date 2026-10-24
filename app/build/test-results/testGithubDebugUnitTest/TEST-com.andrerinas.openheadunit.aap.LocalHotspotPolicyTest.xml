@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.LocalHotspotPolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.102Z" hostname="runnervm8k3b6" time="0.008">
+  <properties/>
+  <testcase name="ambiguityAndDownInterfacesDoNotPublishCredentials" classname="com.andrerinas.openheadunit.aap.LocalHotspotPolicyTest" time="0.003"/>
+  <testcase name="neverAdvertiseExistingStationOrForeignP2pOrCellularNetwork" classname="com.andrerinas.openheadunit.aap.LocalHotspotPolicyTest" time="0.001"/>
+  <testcase name="keepsFiveGhzOnTheStationChannelAndDefaultsTo36WithoutAStation" classname="com.andrerinas.openheadunit.aap.LocalHotspotPolicyTest" time="0.0"/>
+  <testcase name="derivesMacOnlyFromLinkLocalModifiedEui64" classname="com.andrerinas.openheadunit.aap.LocalHotspotPolicyTest" time="0.002"/>
+  <testcase name="localReservationNeverUsesGlobalHotspotTeardownOrP2p" classname="com.andrerinas.openheadunit.aap.LocalHotspotPolicyTest" time="0.001"/>
+  <testcase name="stationDhcpChangeDuringStartupIsNeverAdvertisedAsTheAp" classname="com.andrerinas.openheadunit.aap.LocalHotspotPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.178Z" hostname="runnervm8k3b6" time="0.003">
+  <properties/>
+  <testcase name="the settings default of &quot;0&quot; is not an address" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.001"/>
+  <testcase name="anything that is not shaped like an address is refused" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <testcase name="a masked rung falls through to the next one" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <testcase name="all rungs failing yields the empty string, not a placeholder" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <testcase name="a randomised locally-administered address is a real address" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <testcase name="the user's own setting wins, and is normalised to upper case" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <testcase name="a hand-typed address with dashes is accepted and normalised" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <testcase name="recovers hotspot address when Android masks every MAC API" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <testcase name="the two masking placeholders and blanks are not usable" classname="com.andrerinas.openheadunit.aap.SoftApBssidPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

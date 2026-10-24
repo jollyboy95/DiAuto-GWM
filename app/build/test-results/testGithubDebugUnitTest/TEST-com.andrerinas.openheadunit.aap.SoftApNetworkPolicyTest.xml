@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.187Z" hostname="runnervm8k3b6" time="0.007">
+  <properties/>
+  <testcase name="this app's own VPN interface is not an access point" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.001"/>
+  <testcase name="eligible reports what the choice was made from" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="loopback, down and address-less interfaces are all excluded" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="isApHost answers for a single interface on the same rules" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="an interface named for the station role is excluded" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="a MediaTek AP client is a station, not an access point" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="the vendor spellings are all recognised, in preference order" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="late BYD hotspot startup waits for ap0 instead of publishing upstream details" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.001"/>
+  <testcase name="an access point is picked whatever address it holds" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="an unfamiliar name is still usable, it just loses to a familiar one" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="cellular and numbered Ethernet interfaces never stand in for an automatic hotspot" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="a plain wlan0 is used when it is all there is" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="an excluded preferred interface does not shadow a usable unpreferred one" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="a WiFi Direct group is never mistaken for our access point" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="a cellular bridge is not an access point" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="excluding the station cannot leave us with nothing to advertise" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="nothing at all yields nothing" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.001"/>
+  <testcase name="a named hotspot waits until its own address exists without automatic fallback" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="the station interface is excluded, which is what separates it from the access point" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="explicit interface overrides remain usable for unusual vendor hotspot layouts" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.001"/>
+  <testcase name="an unrecognised access point still wins once the stations are excluded" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="a dedicated access point interface wins over the station one" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <testcase name="with no station to exclude the name preference decides" classname="com.andrerinas.openheadunit.aap.SoftApNetworkPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

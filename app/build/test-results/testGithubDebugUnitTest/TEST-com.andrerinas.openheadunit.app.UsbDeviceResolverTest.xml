@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.app.UsbDeviceResolverTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.256Z" hostname="runnervm8k3b6" time="0.018">
+  <properties/>
+  <testcase name="intent with device takes priority over fallback list" classname="com.andrerinas.openheadunit.app.UsbDeviceResolverTest" time="0.018"/>
+  <testcase name="ambiguous when both intent and list are empty" classname="com.andrerinas.openheadunit.app.UsbDeviceResolverTest" time="0.0"/>
+  <testcase name="sole fallback device used when intent has none" classname="com.andrerinas.openheadunit.app.UsbDeviceResolverTest" time="0.0"/>
+  <testcase name="ambiguous when intent empty and multiple fallback devices" classname="com.andrerinas.openheadunit.app.UsbDeviceResolverTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

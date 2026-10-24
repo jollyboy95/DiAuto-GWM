@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:30.974Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="a single bad boot between good ones is forgiven" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <testcase name="the healthy threshold is a floor, not a target" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <testcase name="the reported crash loop pauses wireless on the fourth boot" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.001"/>
+  <testcase name="the 3 2 1 log ends one cycle short of the guard" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <testcase name="strikes accumulate across runs that die young" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <testcase name="the third short run pauses wireless, the first two do not" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <testcase name="a run that survives clears the count" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <testcase name="a corrupt or absent stored count starts a fresh run" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <testcase name="an ordinary run of short trips does not trip it" classname="com.andrerinas.openheadunit.aap.BootLoopPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

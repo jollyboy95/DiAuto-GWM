@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.060Z" hostname="runnervm8k3b6" time="0.004">
+  <properties/>
+  <testcase name="a truncated run quotes the expectation for what it did see" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="reset forgets both the open run and the learned convention" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.001"/>
+  <testcase name="an out of range channel is ignored rather than crashing" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="channels are audited independently because their runs interleave" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="an unfragmented message also ends an open run" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="unfragmented messages on their own are never reported" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="an orphan quotes no expectation, because there is nothing to expect" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="the measured fragment counts and deltas from the rig report nothing" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="the convention is learned, not assumed" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="a healthy run reports once and then stays quiet" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="a run that never ends is reported when the next message starts" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="the report carries the numbers a reader would need" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="a convention that does not divide evenly still scales exactly" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="a hole is still caught once the expectation scales" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="the learned convention scales with the fragment count" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <testcase name="a missing middle fragment is reported, and it is the case nothing else sees" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.002"/>
+  <testcase name="a fragment with no run open is an orphan" classname="com.andrerinas.openheadunit.aap.FragmentedMessageAuditTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

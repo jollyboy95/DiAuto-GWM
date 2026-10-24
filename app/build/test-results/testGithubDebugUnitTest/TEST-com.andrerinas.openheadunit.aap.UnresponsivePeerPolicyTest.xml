@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.198Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="an unknown endpoint does not inherit a previous streak" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.0"/>
+  <testcase name="a streak against one endpoint accumulates" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.0"/>
+  <testcase name="the ordinary cadence is unchanged below the threshold" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.001"/>
+  <testcase name="backing off never becomes giving up" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.0"/>
+  <testcase name="the first failure counts as one even with nothing recorded before it" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.0"/>
+  <testcase name="the cadence drops at the threshold and stays down" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.0"/>
+  <testcase name="a different endpoint is a different server and starts its own count" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.0"/>
+  <testcase name="the explanation goes out once, at the point the backoff engages" classname="com.andrerinas.openheadunit.aap.UnresponsivePeerPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

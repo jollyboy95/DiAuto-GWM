@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.365Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="shedding while waiting a large share of the window is backpressure" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.001"/>
+  <testcase name="one window is not a verdict" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.0"/>
+  <testcase name="shedding with a small wait is not the codec" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.0"/>
+  <testcase name="the report is once per decoder session" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.0"/>
+  <testcase name="the required windows do not have to be consecutive" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.0"/>
+  <testcase name="waiting without shedding is a decoder under load that is still keeping up" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.0"/>
+  <testcase name="degenerate windows are never backpressure" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.0"/>
+  <testcase name="the threshold is inclusive at exactly the share" classname="com.andrerinas.openheadunit.decoder.VideoBackpressurePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

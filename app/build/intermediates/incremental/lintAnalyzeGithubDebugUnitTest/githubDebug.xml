@@ -1,0 +1,27 @@
+<variant
+    name="githubDebug"
+    useSupportLibraryVectorDrawables="true"
+    package="com.andrerinas.openheadunit"
+    minSdkVersion="16"
+    targetSdkVersion="36.0"
+    debuggable="true"
+    mergedManifest="build/intermediates/merged_manifest/githubDebug/processGithubDebugMainManifest/AndroidManifest.xml"
+    partialResultsDir="build/intermediates/unit_test_lint_partial_results/githubDebug/lintAnalyzeGithubDebugUnitTest/out"
+    desugaredMethodsFiles="/home/runner/.gradle/caches/8.13/transforms/a666f5e1376efd064acd28763cdad820/transformed/D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+  </sourceProviders>
+  <testSourceProviders>
+    <sourceProvider
+        manifests="src/test/AndroidManifest.xml"
+        javaDirectories="src/test/java:src/testGithub/java:src/testDebug/java:src/testGithubDebug/java:src/test/kotlin:src/testGithub/kotlin:src/testDebug/kotlin:src/testGithubDebug/kotlin"
+        assetsDirectories="src/test/assets:src/testGithub/assets:src/testDebug/assets:src/testGithubDebug/assets"
+        unitTest="true"/>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      type="UNIT_TEST">
+  </artifact>
+</variant>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.AuditRecoveryPolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:30.943Z" hostname="runnervm8k3b6" time="0.007">
+  <properties/>
+  <testcase name="the first run on a channel is a baseline, not a fault" classname="com.andrerinas.openheadunit.aap.AuditRecoveryPolicyTest" time="0.001"/>
+  <testcase name="a hole in a video run is asked about, because nothing else will" classname="com.andrerinas.openheadunit.aap.AuditRecoveryPolicyTest" time="0.0"/>
+  <testcase name="no outcome on a non-video channel ever asks" classname="com.andrerinas.openheadunit.aap.AuditRecoveryPolicyTest" time="0.001"/>
+  <testcase name="the outcomes the reassembler already reports are left to it" classname="com.andrerinas.openheadunit.aap.AuditRecoveryPolicyTest" time="0.002"/>
+  <testcase name="a hole in another channel's run is real but not repairable this way" classname="com.andrerinas.openheadunit.aap.AuditRecoveryPolicyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

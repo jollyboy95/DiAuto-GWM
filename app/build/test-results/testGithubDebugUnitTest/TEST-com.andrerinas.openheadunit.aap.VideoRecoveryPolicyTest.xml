@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.VideoRecoveryPolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.221Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="no request is allowed anywhere inside one throttle window" classname="com.andrerinas.openheadunit.aap.VideoRecoveryPolicyTest" time="0.001"/>
+  <testcase name="the first request of a session is always allowed" classname="com.andrerinas.openheadunit.aap.VideoRecoveryPolicyTest" time="0.0"/>
+  <testcase name="the first drop after a rendered frame asks immediately" classname="com.andrerinas.openheadunit.aap.VideoRecoveryPolicyTest" time="0.0"/>
+  <testcase name="a request is allowed once the throttle window has fully elapsed" classname="com.andrerinas.openheadunit.aap.VideoRecoveryPolicyTest" time="0.0"/>
+  <testcase name="a drop before the first rendered frame never asks" classname="com.andrerinas.openheadunit.aap.VideoRecoveryPolicyTest" time="0.0"/>
+  <testcase name="drops share the corrupt-frame throttle window" classname="com.andrerinas.openheadunit.aap.VideoRecoveryPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

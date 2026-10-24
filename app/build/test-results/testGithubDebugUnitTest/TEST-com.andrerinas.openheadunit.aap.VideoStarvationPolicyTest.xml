@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.VideoStarvationPolicyTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.226Z" hostname="runnervm8k3b6" time="0.001">
+  <properties/>
+  <testcase name="says it once, not on every reconnect after" classname="com.andrerinas.openheadunit.aap.VideoStarvationPolicyTest" time="0.0"/>
+  <testcase name="one rendered frame clears it" classname="com.andrerinas.openheadunit.aap.VideoStarvationPolicyTest" time="0.001"/>
+  <testcase name="a session that never handshook neither counts nor clears" classname="com.andrerinas.openheadunit.aap.VideoStarvationPolicyTest" time="0.0"/>
+  <testcase name="a cleared streak can advise again on the next run" classname="com.andrerinas.openheadunit.aap.VideoStarvationPolicyTest" time="0.0"/>
+  <testcase name="a starved session lengthens the streak" classname="com.andrerinas.openheadunit.aap.VideoStarvationPolicyTest" time="0.0"/>
+  <testcase name="advises only once the run is long enough to mean something" classname="com.andrerinas.openheadunit.aap.VideoStarvationPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

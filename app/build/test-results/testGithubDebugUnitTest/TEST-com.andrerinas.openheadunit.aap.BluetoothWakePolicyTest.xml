@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:30.956Z" hostname="runnervm8k3b6" time="0.01">
+  <properties/>
+  <testcase name="no hands-free link means there is nothing to destroy, so poke" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.004"/>
+  <testcase name="targets are named for a log reader" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="only a confirmed pairing may be poked" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="a positive not-paired answer is forgotten" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="a live hands-free link is never poked" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="an unreadable state is never forgotten" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="nothing pokeable is ever forgotten" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="a paired device is never forgotten" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="the poke targets are the assigned audio gateway service classes" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="an unknown uuid still prints as itself" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="hands-free is tried first, headset second, and neither is ever dropped" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="a malformed address is forgotten" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="an unreadable adapter still pokes" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <testcase name="only a connected link suppresses the poke" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.001"/>
+  <testcase name="the three-valued profile read maps onto the three states" classname="com.andrerinas.openheadunit.aap.BluetoothWakePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

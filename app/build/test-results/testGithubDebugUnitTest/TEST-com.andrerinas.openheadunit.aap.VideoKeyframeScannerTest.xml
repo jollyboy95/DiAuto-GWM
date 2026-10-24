@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.217Z" hostname="runnervm8k3b6" time="0.003">
+  <properties/>
+  <testcase name="hevc irap types are keyframes across the whole range" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.001"/>
+  <testcase name="a keyframe buried past the header cap is not scanned for" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="parameter sets alone are not a keyframe" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="an h264 idr behind its parameter sets is still found" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="an offset into a larger buffer is honoured" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="an hevc trailing picture is not a keyframe" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="a truncated or empty access unit is not a keyframe" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="an h264 idr slice is a keyframe" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="an h264 non-idr slice is not a keyframe" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="three byte start codes are recognised" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="an hevc idr behind vps sps pps is still found" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <testcase name="reading an h264 idr as hevc can go either way, which is why the pinned type is passed" classname="com.andrerinas.openheadunit.aap.VideoKeyframeScannerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

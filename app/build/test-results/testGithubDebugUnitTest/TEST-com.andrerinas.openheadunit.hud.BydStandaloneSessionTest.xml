@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.424Z" hostname="runnervm8k3b6" time="0.025">
+  <properties/>
+  <testcase name="failedGuidanceAfterStartSendsEndAndNextUpdateStartsAgain" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.008"/>
+  <testcase name="startsOnceUpdatesTurnAndClearsOnRouteEnd" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.001"/>
+  <testcase name="navigationStateIsReassertedLikeTheStockMap" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.003"/>
+  <testcase name="fixedWireVectorsAndRoundaboutMapping" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.001"/>
+  <testcase name="failedEndIsRetriedBeforeAnyNewGuidance" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.001"/>
+  <testcase name="unchangedGuidanceIsRateLimitedButKeptAlive" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.005"/>
+  <testcase name="invalidDistanceEndsGuidance" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.001"/>
+  <testcase name="interruptedSessionClearsBeforeItStartsAnotherRoute" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.0"/>
+  <testcase name="unknownManeuverEndsGuidanceInsteadOfInventingStraight" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.0"/>
+  <testcase name="cannotStartIfRecoveryJournalCannotBeSaved" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.001"/>
+  <testcase name="anEndedRouteStartsAgainWithoutWaitingForTheRefresh" classname="com.andrerinas.openheadunit.hud.BydStandaloneSessionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.andrerinas.openheadunit.aap.DiscoveryModePolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-24T01:47:31.019Z" hostname="runnervm8k3b6" time="0.002">
+  <properties/>
+  <testcase name="headunit server scans in both its sub-modes, whatever strategy is stored" classname="com.andrerinas.openheadunit.aap.DiscoveryModePolicyTest" time="0.001"/>
+  <testcase name="the routes that bring the phone to us are exactly the ones that skip discovery" classname="com.andrerinas.openheadunit.aap.DiscoveryModePolicyTest" time="0.001"/>
+  <testcase name="native AA never scans, whatever strategy happens to be stored" classname="com.andrerinas.openheadunit.aap.DiscoveryModePolicyTest" time="0.0"/>
+  <testcase name="helper mode scans only where we go looking for the phone" classname="com.andrerinas.openheadunit.aap.DiscoveryModePolicyTest" time="0.0"/>
+  <testcase name="the headunit server mode and the phone hotspot strategy are the same path" classname="com.andrerinas.openheadunit.aap.DiscoveryModePolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
